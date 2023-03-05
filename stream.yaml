@@ -31,609 +31,10 @@ produces:
 consumes:
   - application/json
 security:
-  - gotipathauth: []
   - X-Auth-LibraryId: []
   - X-Auth-ApiKey: []
+  - X-Auth-ClientId: []
 paths:
-  /libraries:
-    get:
-      summary: Get all libraries
-      tags:
-        - libraries
-      responses:
-        '200':
-          description: OK
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-              result:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                    customer_id:
-                      type: string
-                    name:
-                      type: string
-                    api_key:
-                      type: string
-                    raw_storage:
-                      type: integer
-                    transcode_storage:
-                      type: integer
-                    total_storage:
-                      type: integer
-                    cdn_volume:
-                      type: integer
-                    total_video:
-                      type: integer
-                    encoding_output_hour:
-                      type: integer
-                    webhook_secret:
-                      type: string
-                    webhook_url:
-                      type: string
-                    video_distribution_url:
-                      type: string
-                    video_distribution_id:
-                      type: string
-                    live_distribution_url:
-                      type: string
-                    live_distribution_id:
-                      type: string
-                    enabled_live_resolutions:
-                      type:
-                        - array
-                        - 'null'
-                      items:
-                        type: string
-                    enabled_video_resolutions:
-                      type:
-                        - array
-                        - 'null'
-                      items:
-                        type: string
-                    enable_keep_original_file:
-                      type: boolean
-                    enable_early_play:
-                      type: boolean
-                    enable_mp4_fallback:
-                      type: boolean
-                    show_heatmap:
-                      type: boolean
-                    enable_continue_watch:
-                      type: boolean
-                    enable_live_watermark:
-                      type: boolean
-                    enable_video_watermark:
-                      type: boolean
-                    video_watermark:
-                      type: 'null'
-                    live_watermark:
-                      type: 'null'
-                    vast_tag_url:
-                      type: string
-                    allow_direct_play:
-                      type: string
-                    direct_play_url:
-                      type: string
-                    enable_video_drm:
-                      type: boolean
-                    enable_live_drm:
-                      type: boolean
-                    enable_token_authentication:
-                      type: boolean
-                    allowed_referer:
-                      type: boolean
-                    country_access_control:
-                      type: 'null'
-                    ip_access_control:
-                      type: 'null'
-                    token_access_control:
-                      type: string
-                    created_at:
-                      type: string
-                    updated_at:
-                      type: string
-                    deleted_at:
-                      type: 'null'
-              success:
-                type: boolean
-            x-examples:
-              Example 1:
-                message: Library List
-                result:
-                  - id: 0019d070-c7bf-4f60-b78b-5f3ce351ef85
-                    customer_id: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                    name: gotipath
-                    api_key: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                    raw_storage: 0
-                    transcode_storage: 0
-                    total_storage: 0
-                    cdn_volume: 0
-                    total_video: 0
-                    encoding_output_hour: 0
-                    webhook_secret: New Libary
-                    webhook_url: 'https://weebhook.com/weebhok'
-                    video_distribution_url: ''
-                    video_distribution_id: ''
-                    live_distribution_url: ''
-                    live_distribution_id: ''
-                    enabled_live_resolutions:
-                      - 240p
-                      - 720p
-                    enabled_video_resolutions:
-                      - 240p
-                      - '720'
-                    enable_keep_original_file: true
-                    enable_early_play: true
-                    enable_mp4_fallback: true
-                    show_heatmap: false
-                    enable_continue_watch: false
-                    enable_live_watermark: false
-                    enable_video_watermark: false
-                    video_watermark: null
-                    live_watermark: null
-                    vast_tag_url: 'http://gotipath.com'
-                    allow_direct_play: ''
-                    direct_play_url: ''
-                    enable_video_drm: true
-                    enable_live_drm: true
-                    enable_token_authentication: true
-                    allowed_referer: false
-                    country_access_control: null
-                    ip_access_control: null
-                    token_access_control: ''
-                    created_at: '0001-01-01T00:00:00Z'
-                    updated_at: '0001-01-01T00:00:00Z'
-                    deleted_at: null
-                  - id: 0046bda1-25f3-439e-aac7-647c7acf4d1c
-                    customer_id: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                    name: Rubie Kuhn
-                    api_key: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                    raw_storage: 0
-                    transcode_storage: 0
-                    total_storage: 0
-                    cdn_volume: 0
-                    total_video: 0
-                    encoding_output_hour: 0
-                    webhook_secret: ''
-                    webhook_url: ''
-                    video_distribution_url: ''
-                    video_distribution_id: ''
-                    live_distribution_url: ''
-                    live_distribution_id: ''
-                    enabled_live_resolutions: null
-                    enabled_video_resolutions: null
-                    enable_keep_original_file: false
-                    enable_early_play: false
-                    enable_mp4_fallback: false
-                    show_heatmap: false
-                    enable_continue_watch: false
-                    enable_live_watermark: false
-                    enable_video_watermark: false
-                    video_watermark: null
-                    live_watermark: null
-                    vast_tag_url: ''
-                    allow_direct_play: ''
-                    direct_play_url: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                    enable_video_drm: false
-                    enable_live_drm: false
-                    enable_token_authentication: false
-                    allowed_referer: false
-                    country_access_control: null
-                    ip_access_control: null
-                    token_access_control: ''
-                    created_at: '0001-01-01T00:00:00Z'
-                    updated_at: '0001-01-01T00:00:00Z'
-                    deleted_at: null
-                success: true
-      operationId: get-all-libraries
-      description: Returns a list of created libraries.
-    post:
-      summary: Create live libraries
-      tags:
-        - libraries
-      operationId: post-libraries
-      responses:
-        '201':
-          description: Created
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-              result:
-                type: object
-                properties:
-                  id:
-                    type: string
-                  customer_id:
-                    type: string
-                  name:
-                    type: string
-                  api_key:
-                    type: string
-                  raw_storage:
-                    type: integer
-                  transcode_storage:
-                    type: integer
-                  total_storage:
-                    type: integer
-                  cdn_volume:
-                    type: integer
-                  total_video:
-                    type: integer
-                  encoding_output_hour:
-                    type: integer
-                  webhook_secret:
-                    type: string
-                  webhook_url:
-                    type: string
-                  video_distribution_url:
-                    type: string
-                  video_distribution_id:
-                    type: string
-                  live_distribution_url:
-                    type: string
-                  live_distribution_id:
-                    type: string
-                  enabled_live_resolutions:
-                    type: 'null'
-                  enabled_video_resolutions:
-                    type: 'null'
-                  enable_keep_original_file:
-                    type: boolean
-                  enable_early_play:
-                    type: boolean
-                  enable_mp4_fallback:
-                    type: boolean
-                  show_heatmap:
-                    type: boolean
-                  enable_continue_watch:
-                    type: boolean
-                  enable_live_watermark:
-                    type: boolean
-                  enable_video_watermark:
-                    type: boolean
-                  video_watermark:
-                    type: 'null'
-                  live_watermark:
-                    type: 'null'
-                  vast_tag_url:
-                    type: string
-                  allow_direct_play:
-                    type: string
-                  direct_play_url:
-                    type: string
-                  enable_video_drm:
-                    type: boolean
-                  enable_live_drm:
-                    type: boolean
-                  enable_token_authentication:
-                    type: boolean
-                  allowed_referer:
-                    type: boolean
-                  country_access_control:
-                    type: 'null'
-                  ip_access_control:
-                    type: 'null'
-                  token_access_control:
-                    type: string
-                  created_at:
-                    type: string
-                  updated_at:
-                    type: string
-                  deleted_at:
-                    type: 'null'
-              success:
-                type: boolean
-            x-examples:
-              Example 1:
-                message: Library List
-                result:
-                  id: 5f4145c5-b8d7-4622-90d4-b75d0e2eb858
-                  customer_id: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                  name: New Libary 312313131
-                  api_key: yNSfMDjDuMcztBvWFs9qsp//9B8XdP7kLD6LFAMZNpiBCLYqOwAE61TMSIh35BzJBTsjPw
-                  raw_storage: 0
-                  transcode_storage: 0
-                  total_storage: 0
-                  cdn_volume: 0
-                  total_video: 0
-                  encoding_output_hour: 0
-                  webhook_secret: ''
-                  webhook_url: ''
-                  video_distribution_url: ''
-                  video_distribution_id: ''
-                  live_distribution_url: ''
-                  live_distribution_id: ''
-                  enabled_live_resolutions: null
-                  enabled_video_resolutions: null
-                  enable_keep_original_file: false
-                  enable_early_play: false
-                  enable_mp4_fallback: false
-                  show_heatmap: false
-                  enable_continue_watch: false
-                  enable_live_watermark: false
-                  enable_video_watermark: false
-                  video_watermark: null
-                  live_watermark: null
-                  vast_tag_url: ''
-                  allow_direct_play: ''
-                  direct_play_url: ''
-                  enable_video_drm: false
-                  enable_live_drm: false
-                  enable_token_authentication: false
-                  allowed_referer: false
-                  country_access_control: null
-                  ip_access_control: null
-                  token_access_control: ''
-                  created_at: '2022-12-13T12:22:13.261+06:00'
-                  updated_at: '2022-12-13T12:22:13.261+06:00'
-                  deleted_at: null
-                success: true
-      parameters:
-        - in: body
-          name: body
-          schema:
-            type: object
-            properties:
-              name:
-                type: string
-            x-examples:
-              Example 1:
-                name: New Libary 312313131
-      description: Create live stream
-  '/libraries/{id}':
-    get:
-      summary: Get library
-      tags:
-        - libraries
-      responses:
-        '200':
-          description: OK
-          schema:
-            type: object
-            properties:
-              message:
-                type: string
-              result:
-                type: object
-                properties:
-                  id:
-                    type: string
-                  customer_id:
-                    type: string
-                  name:
-                    type: string
-                  api_key:
-                    type: string
-                  raw_storage:
-                    type: integer
-                  transcode_storage:
-                    type: integer
-                  total_storage:
-                    type: integer
-                  cdn_volume:
-                    type: integer
-                  total_video:
-                    type: integer
-                  encoding_output_hour:
-                    type: integer
-                  webhook_secret:
-                    type: string
-                  webhook_url:
-                    type: string
-                  video_distribution_url:
-                    type: string
-                  video_distribution_id:
-                    type: string
-                  live_distribution_url:
-                    type: string
-                  live_distribution_id:
-                    type: string
-                  enabled_live_resolutions:
-                    type: array
-                    items:
-                      type: string
-                  enabled_video_resolutions:
-                    type: array
-                    items:
-                      type: string
-                  enable_keep_original_file:
-                    type: boolean
-                  enable_early_play:
-                    type: boolean
-                  enable_mp4_fallback:
-                    type: boolean
-                  show_heatmap:
-                    type: boolean
-                  enable_continue_watch:
-                    type: boolean
-                  enable_live_watermark:
-                    type: boolean
-                  enable_video_watermark:
-                    type: boolean
-                  video_watermark:
-                    type: 'null'
-                  live_watermark:
-                    type: 'null'
-                  vast_tag_url:
-                    type: string
-                  allow_direct_play:
-                    type: string
-                  direct_play_url:
-                    type: string
-                  enable_video_drm:
-                    type: boolean
-                  enable_live_drm:
-                    type: boolean
-                  enable_token_authentication:
-                    type: boolean
-                  allowed_referer:
-                    type: boolean
-                  country_access_control:
-                    type: 'null'
-                  ip_access_control:
-                    type: 'null'
-                  token_access_control:
-                    type: string
-                  created_at:
-                    type: string
-                  updated_at:
-                    type: string
-                  deleted_at:
-                    type: 'null'
-              success:
-                type: boolean
-            x-examples:
-              Example 1:
-                message: Library details
-                result:
-                  id: 0019d070-c7bf-4f60-b78b-5f3ce351ef85
-                  customer_id: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                  name: gotipath
-                  api_key: b1bef3d5-a2dd-4fec-9bf3-061038ce2c41
-                  raw_storage: 0
-                  transcode_storage: 0
-                  total_storage: 0
-                  cdn_volume: 0
-                  total_video: 0
-                  encoding_output_hour: 0
-                  webhook_secret: New Libary
-                  webhook_url: 'https://weebhook.com/weebhok'
-                  video_distribution_url: ''
-                  video_distribution_id: ''
-                  live_distribution_url: ''
-                  live_distribution_id: ''
-                  enabled_live_resolutions:
-                    - 240p
-                    - 720p
-                  enabled_video_resolutions:
-                    - 240p
-                    - '720'
-                  enable_keep_original_file: true
-                  enable_early_play: true
-                  enable_mp4_fallback: true
-                  show_heatmap: false
-                  enable_continue_watch: false
-                  enable_live_watermark: false
-                  enable_video_watermark: false
-                  video_watermark: null
-                  live_watermark: null
-                  vast_tag_url: 'http://gotipath.com'
-                  allow_direct_play: ''
-                  direct_play_url: ''
-                  enable_video_drm: true
-                  enable_live_drm: true
-                  enable_token_authentication: true
-                  allowed_referer: false
-                  country_access_control: null
-                  ip_access_control: null
-                  token_access_control: ''
-                  created_at: '0001-01-01T00:00:00Z'
-                  updated_at: '0001-01-01T00:00:00Z'
-                  deleted_at: null
-                success: true
-      operationId: get-libraries
-      description: Returns library details
-    put:
-      summary: Update Library
-      tags:
-        - libraries
-      operationId: put-libraries
-      responses:
-        '200':
-          description: OK
-      description: update Library
-      parameters:
-        - in: body
-          name: body
-          schema:
-            type: object
-            properties:
-              name:
-                type: string
-              webhook_secret:
-                type: string
-              webhook_url:
-                type: string
-              enabled_live_resolutions:
-                type: array
-                items:
-                  type: string
-              enabled_video_resolutions:
-                type: array
-                items:
-                  type: string
-              enable_keep_original_file:
-                type: boolean
-              enable_early_play:
-                type: boolean
-              enable_mp4_fallback:
-                type: boolean
-              enable_continue_watch:
-                type: boolean
-              vast_tag_url:
-                type: string
-              enable_video_drm:
-                type: boolean
-              enable_live_drm:
-                type: boolean
-              enable_token_authentication:
-                type: boolean
-            x-examples:
-              Example 1:
-                name: gotipath
-                webhook_secret: New Libary
-                webhook_url: 'https://weebhook.com/weebhok'
-                enabled_live_resolutions:
-                  - 240p
-                  - 720p
-                enabled_video_resolutions:
-                  - 240p
-                  - '720'
-                enable_keep_original_file: true
-                enable_early_play: true
-                enable_mp4_fallback: true
-                enable_continue_watch: true
-                vast_tag_url: 'http://gotipath.com'
-                enable_video_drm: true
-                enable_live_drm: true
-                enable_token_authentication: true
-          description: Request payload
-    parameters:
-      - type: string
-        name: id
-        in: path
-        required: true
-        format: uuid
-    delete:
-      summary: Delete live libraries
-      tags:
-        - libraries
-      operationId: delete-libraries-id
-      responses:
-        '200':
-          description: OK
-          schema:
-            type: object
-            x-examples:
-              Example 1:
-                message: Library has  been deleted.
-                result: ''
-                success: true
-            properties:
-              message:
-                type: string
-              success:
-                type: boolean
-      description: delete libary
   '/libraries/{id}/collections':
     parameters:
       - type: string
@@ -645,7 +46,7 @@ paths:
     get:
       summary: Get All Collections
       tags:
-        - collections
+        - Collections
       responses:
         '200':
           description: OK
@@ -1002,7 +403,7 @@ paths:
       description: Returns a list of created collections tree.
     post:
       tags:
-        - collections
+        - Collections
       summary: Create Collections
       operationId: post-libraries-id-collections
       responses:
@@ -1039,7 +440,7 @@ paths:
     get:
       summary: Get Collections
       tags:
-        - collections
+        - Collections
       responses:
         '200':
           description: OK
@@ -1419,7 +820,7 @@ paths:
     get:
       summary: Get All Videos
       tags:
-        - video
+        - Videos
       responses:
         '200':
           description: OK
@@ -2156,7 +1557,7 @@ paths:
     post:
       summary: Create Videos
       tags:
-        - video
+        - Videos
       operationId: post-libraries-id-videos
       responses:
         '201':
@@ -2281,7 +1682,7 @@ paths:
     put:
       summary: Videos Updated
       tags:
-        - video
+        - Videos
       operationId: put-libraries-id-videos
       responses:
         '200':
@@ -2296,7 +1697,7 @@ paths:
     get:
       summary: Get All Live Stream
       tags:
-        - livestreams
+        - Live Streams
       responses:
         '200':
           description: OK
@@ -2416,7 +1817,7 @@ paths:
     post:
       summary: Create Live Stream
       tags:
-        - livestreams
+        - Live Streams
       operationId: post-libraries-id-livestreams
       responses:
         '201':
@@ -2517,18 +1918,11 @@ paths:
                   - dash
                 stream_type: event
                 live_recording: true
-    delete:
-      summary: Delete Live  Stream
-      tags:
-        - livestreams
-      operationId: delete-libraries-id-livestreams
-      responses:
-        '200':
-          description: OK
   /tusupload:
     get:
       summary: TUS Resumable Uploads
-      tags: []
+      tags:
+        - Videos
       operationId: get-tusdupload
       description: 'Initiates a video upload using the TUS protocol. On success, the server responds with a status code 201 (created) and includes a location header to indicate where the content should be uploaded. Refer to https://tus.io for protocol details.'
       responses:
@@ -2556,12 +1950,590 @@ paths:
     delete:
       summary: Delete Video
       tags:
-        - video
+        - Videos
       operationId: delete-libraries-libraryId-videos-videoId
       responses:
         '200':
           description: OK
       description: Delete Video
+  '/libraries/{libraryId}/livestreams/{livestreamId}':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+      - type: string
+        name: livestreamId
+        in: path
+        required: true
+    delete:
+      tags:
+        - Live Streams
+      summary: Delete Livestream
+      operationId: delete-libraries-libraryId-livestreams-livestreamId
+      responses:
+        '200':
+          description: OK
+      description: Delete livesteam
+    get:
+      tags:
+        - Live Streams
+      summary: Livestream details
+      operationId: get-libraries-libraryId-livestreams-livestreamId
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              result:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  app_name:
+                    type: string
+                  stream_name:
+                    type: string
+                  stream_type:
+                    type: string
+                  ingestion_url:
+                    type: string
+                  ingestion_key:
+                    type: string
+                  ingestion_protocol:
+                    type: string
+                  outputs:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        playlist:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              preset:
+                                type: string
+                              uri:
+                                type: string
+                        protocol:
+                          type: string
+                        manifest:
+                          type: string
+              success:
+                type: boolean
+            x-examples:
+              Example 1:
+                message: Live Stream details.
+                result:
+                  id: 01e20e24-6a57-4bf8-8163-ff81d3ae59ba
+                  app_name: roblzxxmrm
+                  stream_name: linearwithrecord2
+                  stream_type: linear
+                  ingestion_url: 'rtmp://live-push.gotipath.com/roblzxxmrm'
+                  ingestion_key: linearwithrecord2?token=1676273419-7bcd679059e0d522617dc689e0742fd0
+                  ingestion_protocol: ''
+                  outputs:
+                    - playlist:
+                        - preset: 240p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-240p.m3u8'
+                        - preset: 360p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-360p.m3u8'
+                        - preset: 480p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-480p.m3u8'
+                        - preset: 720p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-720p.m3u8'
+                        - preset: 1080p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-1080p.m3u8'
+                        - preset: 1440p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-1440p.m3u8'
+                        - preset: 2160p
+                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-2160p.m3u8'
+                      protocol: hls
+                      manifest: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-manifest.m3u8'
+                success: true
+        '404':
+          description: Not Found
+          schema:
+            type: object
+            properties: {}
+      description: Livestream details
+  '/libraries/{libraryId}/livestreams/{livestreamId}/ban':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+      - type: string
+        name: livestreamId
+        in: path
+        required: true
+    patch:
+      tags:
+        - Live Streams
+      summary: Livestream Ban
+      operationId: patch-libraries-libraryId-livestreams-livestreamId-ban
+      responses:
+        '200':
+          description: OK
+      description: Livestream ban
+  '/libraries/{libraryId}/livestreams/{livestreamId}/unban':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+      - type: string
+        name: livestreamId
+        in: path
+        required: true
+    patch:
+      tags:
+        - Live Streams
+      summary: Livestream Unban
+      operationId: hpatch-libraries-libraryId-livestreams-livestreamId-ban
+      responses:
+        '200':
+          description: OK
+      description: Livestream unban
+  '/libraries/{libraryId}/players':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+    get:
+      summary: List all player
+      tags:
+        - Players
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              result:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    customer_id:
+                      type: string
+                    library_id:
+                      type: string
+                    name:
+                      type: string
+                    primary_color:
+                      type: string
+                    custom_html:
+                      type: object
+                      properties:
+                        head:
+                          type: string
+                        footer:
+                          type: string
+                    language:
+                      type: string
+                    font_family:
+                      type: string
+                    font_size:
+                      type: integer
+                    caption:
+                      type: object
+                      properties:
+                        font_size:
+                          type: integer
+                        font_color:
+                          type: string
+                        background_color:
+                          type: string
+                    controls:
+                      type: object
+                      properties:
+                        big_play_button:
+                          type: boolean
+                        play_pause_button:
+                          type: boolean
+                        mute_button:
+                          type: boolean
+                        volume_slider:
+                          type: boolean
+                        caption_button:
+                          type: boolean
+                        settings_button:
+                          type: boolean
+                        picture_in_picture_button:
+                          type: boolean
+                        current_duration:
+                          type: boolean
+                        remaining_duration:
+                          type: boolean
+                        total_duration:
+                          type: boolean
+                        progress_slider:
+                          type: boolean
+                        watchtime_heatmap:
+                          type: 'null'
+                        double_tap_forward_rewind:
+                          type: boolean
+                        airplay_button:
+                          type: boolean
+                        fullscreen_button:
+                          type: boolean
+                    settings:
+                      type: object
+                      properties:
+                        captions:
+                          type: boolean
+                        quality:
+                          type: boolean
+                        speed:
+                          type: boolean
+                        loop:
+                          type: boolean
+                    is_default:
+                      type: boolean
+              success:
+                type: boolean
+            x-examples:
+              Example 1:
+                message: Player List
+                result:
+                  - id: cc6d57d3-776d-4f84-8ca0-5c8c42d0af8c
+                    customer_id: 92f9d000-5051-4339-9b3a-91f1c2a4c076
+                    library_id: c7bee059-e642-48af-bdb3-766d16dae08e
+                    name: Player 1
+                    primary_color: '#1D4ED8'
+                    custom_html:
+                      head: ''
+                      footer: ''
+                    language: en
+                    font_family: ''
+                    font_size: 16
+                    caption:
+                      font_size: 20
+                      font_color: '#FFFFFF'
+                      background_color: '#000000'
+                    controls:
+                      big_play_button: true
+                      play_pause_button: true
+                      mute_button: true
+                      volume_slider: true
+                      caption_button: true
+                      settings_button: true
+                      picture_in_picture_button: true
+                      current_duration: false
+                      remaining_duration: true
+                      total_duration: false
+                      progress_slider: true
+                      watchtime_heatmap: null
+                      double_tap_forward_rewind: true
+                      airplay_button: false
+                      fullscreen_button: true
+                    settings:
+                      captions: true
+                      quality: true
+                      speed: true
+                      loop: true
+                    is_default: false
+                success: true
+      operationId: get-libraries-libraryId-players
+      description: 'Retrieve a list of all the player themes you created, as well as details about each one.'
+    post:
+      summary: Create a player
+      tags:
+        - Players
+      operationId: post-libraries-libraryId-players
+      responses:
+        '200':
+          description: OK
+      description: 'Create a player for your video, and customise it.'
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            x-examples:
+              Example 1:
+                id: null
+                library_id: c7bee059-e642-48af-bdb3-766d16dae08e
+                name: test
+                primary_color: '#1D4ED8'
+                custom_html:
+                  head: ''
+                  footer: ''
+                language: en
+                font_family: ''
+                font_size: 16
+                caption:
+                  font_size: 20
+                  font_color: '#563939'
+                  background_color: '#000000'
+                controls:
+                  big_play_button: true
+                  play_pause_button: true
+                  mute_button: true
+                  volume_slider: true
+                  caption_button: true
+                  settings_button: true
+                  picture_in_picture_button: true
+                  current_duration: false
+                  remaining_duration: true
+                  total_duration: true
+                  progress_slider: true
+                  double_tap_forward_rewind: true
+                  airplay_button: true
+                  fullscreen_button: true
+                settings:
+                  captions: true
+                  quality: true
+                  speed: true
+                  loop: true
+            properties:
+              library_id:
+                type: string
+              name:
+                type: string
+              primary_color:
+                type: string
+              custom_html:
+                type: object
+                properties:
+                  head:
+                    type: string
+                  footer:
+                    type: string
+              language:
+                type: string
+              font_family:
+                type: string
+              font_size:
+                type: integer
+              caption:
+                type: object
+                properties:
+                  font_size:
+                    type: integer
+                  font_color:
+                    type: string
+                  background_color:
+                    type: string
+              controls:
+                type: object
+                properties:
+                  big_play_button:
+                    type: boolean
+                  play_pause_button:
+                    type: boolean
+                  mute_button:
+                    type: boolean
+                  volume_slider:
+                    type: boolean
+                  caption_button:
+                    type: boolean
+                  settings_button:
+                    type: boolean
+                  picture_in_picture_button:
+                    type: boolean
+                  current_duration:
+                    type: boolean
+                  remaining_duration:
+                    type: boolean
+                  total_duration:
+                    type: boolean
+                  progress_slider:
+                    type: boolean
+                  double_tap_forward_rewind:
+                    type: boolean
+                  airplay_button:
+                    type: boolean
+                  fullscreen_button:
+                    type: boolean
+              settings:
+                type: object
+                properties:
+                  captions:
+                    type: boolean
+                  quality:
+                    type: boolean
+                  speed:
+                    type: boolean
+                  loop:
+                    type: boolean
+  '/libraries/{libraryId}/players/{playerId}':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+      - type: string
+        name: playerId
+        in: path
+        required: true
+    get:
+      summary: Retrieve a player
+      tags:
+        - Players
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties: {}
+      operationId: get-libraries-libraryId-players-playerId
+    delete:
+      summary: Delete a player
+      tags:
+        - Players
+      operationId: delete-libraries-libraryId-players-playerId
+      responses:
+        '200':
+          description: OK
+    put:
+      tags:
+        - Players
+      summary: Update a player
+      operationId: put-libraries-libraryId-players-playerId
+      responses:
+        '200':
+          description: OK
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties: {}
+  '/libraries/{libraryId}/players/{playerId}/mark-as-default':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+      - type: string
+        name: playerId
+        in: path
+        required: true
+    post:
+      summary: Mark as default a Player
+      tags:
+        - Players
+      operationId: post-libraries-libraryId-players-playerId-mark-as-default
+      responses:
+        '200':
+          description: OK
+  '/libraries/{libraryId}/watermarks':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+    delete:
+      summary: Delete a watermark
+      tags:
+        - Watermark
+      operationId: delete-libraries-libraryId-watermarks
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Upload &  Update a watermark
+      tags:
+        - Watermark
+      operationId: post-libraries-libraryId-watermarks
+      responses:
+        '200':
+          description: OK
+  '/libraries/{libraryId}/advertisements':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+    get:
+      summary: List all  Advertisements
+      tags:
+        - Advertisements
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties: {}
+      operationId: get-libraries-libraryId-advertisements
+    post:
+      summary: Create a Advertisements
+      tags:
+        - Advertisements
+      operationId: post-libraries-libraryId-advertisements
+      responses:
+        '200':
+          description: OK
+  '/libraries/{libraryId}/advertisements/{advertisementId}':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+      - type: string
+        name: advertisementId
+        in: path
+        required: true
+    get:
+      summary: Retrieve a advertisement
+      tags:
+        - Advertisements
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties: {}
+      operationId: get-libraries-libraryId-advertisements-advertisementId
+    put:
+      summary: Update a advertisement
+      operationId: put-libraries-libraryId-advertisements-advertisementId
+      tags:
+        - Advertisements
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Delete a advertisement
+      tags:
+        - Advertisements
+      operationId: delete-libraries-libraryId-advertisements-advertisementId
+      responses:
+        '200':
+          description: OK
+  '/libraries/{libraryId}/access-controls':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+    put:
+      summary: Enabled Access Controls
+      tags:
+        - Access controls
+      operationId: put-libraries-libraryId-access-controls
+      responses:
+        '200':
+          description: OK
+    get:
+      summary: Retrieve Access controls
+      tags:
+        - Access controls
+      operationId: get-libraries-libraryId-access-controls
+      responses:
+        '200':
+          description: OK
 definitions: {}
 securityDefinitions:
   X-Auth-ClientId:
