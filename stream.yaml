@@ -1956,6 +1956,145 @@ paths:
         '200':
           description: OK
       description: Delete Video
+    get:
+      summary: Get Video
+      tags:
+        - Videos
+      operationId: get-libraries-libraryId-videos-videoId
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            x-examples:
+              Example 1:
+                message: Video Details
+                result:
+                  id: 50cbe55a-61dd-4a00-bf65-3b0a227e22dc
+                  library_id: 00d21629-0f9b-4989-83f6-eed66d49c6b1
+                  collection_id: ''
+                  name: sifat new 2video
+                  views: 0
+                  length: 597
+                  formatted_duration: '09:57'
+                  status: playable
+                  upload_type: portal
+                  framerate: 0
+                  width: 0
+                  height: 0
+                  thumbnail_url: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/thumbnail.jpg'
+                  thumbnail_count: 5
+                  preview_animation_thumbnail_url: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/preview.webp'
+                  captions: []
+                  chapters: []
+                  moments: []
+                  uploaded_at: '2023-03-14T04:21:21Z'
+                  created_at: '2023-03-14T04:21:21Z'
+                  updated_at: '2023-03-14T04:29:09Z'
+                  direct_play_url: 'https://player.gotipath.com/stream/00d21629-0f9b-4989-83f6-eed66d49c6b1/default/50cbe55a-61dd-4a00-bf65-3b0a227e22dc'
+                  manifest_url: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/playlist.m3u8'
+                  transcoding_progress: 100
+                  raw_size: 158008374
+                  size: 524 MB
+                  outputs:
+                    - playlist:
+                        - preset: 240p
+                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_240p.mp4'
+                        - preset: 360p
+                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_360p.mp4'
+                        - preset: 480p
+                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_480p.mp4'
+                        - preset: 720p
+                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_720p.mp4'
+                      protocol: mp4
+                success: true
+            properties:
+              message:
+                type: string
+              result:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  library_id:
+                    type: string
+                  collection_id:
+                    type: string
+                  name:
+                    type: string
+                  views:
+                    type: integer
+                  length:
+                    type: integer
+                  formatted_duration:
+                    type: string
+                  status:
+                    type: string
+                  upload_type:
+                    type: string
+                  framerate:
+                    type: integer
+                  width:
+                    type: integer
+                  height:
+                    type: integer
+                  thumbnail_url:
+                    type: string
+                  thumbnail_count:
+                    type: integer
+                  preview_animation_thumbnail_url:
+                    type: string
+                  captions:
+                    type: array
+                    items:
+                      type: object
+                  chapters:
+                    type: array
+                    items:
+                      type: object
+                  moments:
+                    type: array
+                    items:
+                      type: object
+                  uploaded_at:
+                    type: string
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                  direct_play_url:
+                    type: string
+                  manifest_url:
+                    type: string
+                  transcoding_progress:
+                    type: integer
+                  raw_size:
+                    type: integer
+                  size:
+                    type: string
+                  outputs:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        playlist:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              preset:
+                                type: string
+                              uri:
+                                type: string
+                        protocol:
+                          type: string
+                        manifest:
+                          type: string
+                          x-stoplight:
+                            id: sqhvumt5vjsee
+              success:
+                type: boolean
+      description: Get Video Details.
   '/libraries/{libraryId}/livestreams/{livestreamId}':
     parameters:
       - type: string
@@ -2534,6 +2673,173 @@ paths:
       responses:
         '200':
           description: OK
+  '/libraries/{libraryId}/videos/pull':
+    parameters:
+      - type: string
+        name: libraryId
+        in: path
+        required: true
+    post:
+      summary: Pull Video
+      tags:
+        - Videos
+      operationId: post-libraries-libraryId-videos-pull
+      responses:
+        '201':
+          description: Created
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              result:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  customer_id:
+                    type: string
+                  library_id:
+                    type: string
+                  collection_id:
+                    type: string
+                  name:
+                    type: string
+                  raw_path:
+                    type: string
+                  raw_size:
+                    type: integer
+                  transcoding_size:
+                    type: integer
+                  size:
+                    type: integer
+                  vast_url:
+                    type: string
+                  raw_file_name:
+                    type: string
+                  views:
+                    type: integer
+                  length:
+                    type: integer
+                  status:
+                    type: string
+                  framerate:
+                    type: integer
+                  width:
+                    type: integer
+                  height:
+                    type: integer
+                  thumbnail_path:
+                    type: string
+                  thumbnail_count:
+                    type: integer
+                  thumbnail_paths:
+                    type: 'null'
+                  captions:
+                    type: 'null'
+                  chapters:
+                    type: 'null'
+                  meta_data:
+                    type: 'null'
+                  moments:
+                    type: 'null'
+                  uploaded_at:
+                    type: string
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                  transcoding_progress:
+                    type: integer
+                  total_watch_time:
+                    type: integer
+                  advertisement_id:
+                    type: string
+                  tags:
+                    type: 'null'
+              success:
+                type: boolean
+            x-examples:
+              Example 1:
+                message: Video pull request Accepted
+                result:
+                  id: 57da476e-c3b8-4d72-9d67-d59c6b4f91d5
+                  customer_id: ''
+                  library_id: c15f1765-f67d-42d9-82fc-484678c03c3d
+                  collection_id: ''
+                  name: gotipath new video
+                  raw_path: ''
+                  raw_size: 22560883
+                  transcoding_size: 0
+                  size: 0
+                  vast_url: ''
+                  raw_file_name: ''
+                  views: 0
+                  length: 0
+                  status: pulling
+                  framerate: 0
+                  width: 0
+                  height: 0
+                  thumbnail_path: ''
+                  thumbnail_count: 0
+                  thumbnail_paths: null
+                  captions: null
+                  chapters: null
+                  meta_data: null
+                  moments: null
+                  uploaded_at: '2023-03-14T00:17:34.397739+06:00'
+                  created_at: '2023-03-14T00:17:34.402+06:00'
+                  updated_at: '2023-03-14T00:17:34.402+06:00'
+                  transcoding_progress: 0
+                  total_watch_time: 0
+                  advertisement_id: ''
+                  tags: null
+                success: true
+        '400':
+          description: Bad Request
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              errors:
+                type: 'null'
+              success:
+                type: boolean
+            x-examples:
+              Example 1:
+                message: 'Post "http://localhost:8081/v1/libraries/c15f1765-f67d-42d9-82fc-484678c03c3d/videos/pull": dial tcp [::1]:8081: connect: connection refused'
+                errors: null
+                success: false
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            x-examples:
+              Example 1:
+                name: gotipath new video
+                url: 'https://storage.googleapis.com/muxdemofiles/mux-video-intro.mp4'
+                request_headers:
+                  Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l
+                custom_id_1: 7xfhsfsfsldalsdald
+            properties:
+              name:
+                type: string
+              url:
+                type: string
+                description: The URL where the video will be fetched
+              request_headers:
+                type: object
+                description: The headers that will be sent together with the pull request
+              custom_id_1:
+                type: string
+                description: Set the custom value here if needed
+            required:
+              - name
+              - url
+          description: ''
+      description: 'Pull Video '
 definitions: {}
 securityDefinitions:
   X-Auth-ClientId:
