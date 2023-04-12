@@ -1,26 +1,26 @@
-swagger: '2.0'
+swagger: "2.0"
 x-stoplight:
   id: 2sx0arp6v1nl9
 info:
   title: Gotipath API
   version: v1
-  termsOfService: 'https://www.gotipath.com/legal'
+  termsOfService: "https://www.gotipath.com/legal"
   x-providerName: gotipath.com
   x-preferred: true
   description: Welcome to the Streaming Platform API documentation. Learn how to use the Gotipath API. Everything that can be done with the control panel can also be achieved with our API documented on this page.
   contact:
     email: developer@gotipath.com
     name: Gotipath Developers
-    url: 'https://gotipath.com/support'
+    url: "https://gotipath.com/support"
     x-twitter: Gotipath
     x-apisguru-categories:
       - telecom
   license:
     name: MIT
-    url: 'https://opensource.org/licenses/MIT'
+    url: "https://opensource.org/licenses/MIT"
 x-logo:
-  url: 'https://images.prismic.io/gotipath-website/9d1ecca4-d282-4eb1-a7d3-9534700edcf8_gotiPath_logo.png'
-  href: 'https://docs.gotipath.com/'
+  url: "https://images.prismic.io/gotipath-website/9d1ecca4-d282-4eb1-a7d3-9534700edcf8_gotiPath_logo.png"
+  href: "https://docs.gotipath.com/"
   altText: Gotipath
 host: apistream.gotipath.com
 basePath: /v1
@@ -35,7 +35,7 @@ security:
   - X-Auth-ApiKey: []
   - X-Auth-ClientId: []
 paths:
-  '/libraries/{id}/collections':
+  "/libraries/{id}/collections":
     parameters:
       - type: string
         name: id
@@ -48,7 +48,7 @@ paths:
       tags:
         - Collections
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -106,297 +106,297 @@ paths:
                   data:
                     - id: 21d26242-b240-4afb-a2c4-170fb71fc6d3
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T12:08:58.898+06:00'
-                      updated_at: '2022-12-04T12:08:58.898+06:00'
+                      created_at: "2022-12-04T12:08:58.898+06:00"
+                      updated_at: "2022-12-04T12:08:58.898+06:00"
                       name: test
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: dd003855-149e-44af-ac50-3921a4e02500
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:11:52.543+06:00'
-                          updated_at: '2022-12-04T12:11:52.543+06:00'
+                          created_at: "2022-12-04T12:11:52.543+06:00"
+                          updated_at: "2022-12-04T12:11:52.543+06:00"
                           name: test
                           parent_id: 21d26242-b240-4afb-a2c4-170fb71fc6d3
                           children: []
                         - id: b7460472-b7ad-46b9-a4fb-ebd1dfec923b
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:12:03.778+06:00'
-                          updated_at: '2022-12-04T12:12:03.778+06:00'
+                          created_at: "2022-12-04T12:12:03.778+06:00"
+                          updated_at: "2022-12-04T12:12:03.778+06:00"
                           name: test
                           parent_id: 21d26242-b240-4afb-a2c4-170fb71fc6d3
                           children: []
                     - id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T12:12:24.001+06:00'
-                      updated_at: '2022-12-04T12:12:24.001+06:00'
+                      created_at: "2022-12-04T12:12:24.001+06:00"
+                      updated_at: "2022-12-04T12:12:24.001+06:00"
                       name: Movies
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: e7ec9662-de19-4791-8e82-d3c4860afc4d
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:13:21.841+06:00'
-                          updated_at: '2022-12-04T12:13:21.841+06:00'
+                          created_at: "2022-12-04T12:13:21.841+06:00"
+                          updated_at: "2022-12-04T12:13:21.841+06:00"
                           name: Bangla Movies
                           parent_id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                           children: []
                         - id: 9d61383c-1ecb-4750-af49-9bca83e2b45c
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:13:31.723+06:00'
-                          updated_at: '2022-12-04T12:13:31.723+06:00'
+                          created_at: "2022-12-04T12:13:31.723+06:00"
+                          updated_at: "2022-12-04T12:13:31.723+06:00"
                           name: Enlish Movies
                           parent_id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                           children: []
                         - id: fbe6138b-804f-479a-931e-46436cddd50c
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:13:43.937+06:00'
-                          updated_at: '2022-12-04T12:13:43.937+06:00'
+                          created_at: "2022-12-04T12:13:43.937+06:00"
+                          updated_at: "2022-12-04T12:13:43.937+06:00"
                           name: Catoon Movies
                           parent_id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                           children: []
                     - id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T12:16:03.072+06:00'
-                      updated_at: '2022-12-04T12:16:03.072+06:00'
+                      created_at: "2022-12-04T12:16:03.072+06:00"
+                      updated_at: "2022-12-04T12:16:03.072+06:00"
                       name: Tutorial
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: ffde1310-6a26-41e1-9ddd-ea05ba77b517
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:16:30.549+06:00'
-                          updated_at: '2022-12-04T12:16:30.549+06:00'
+                          created_at: "2022-12-04T12:16:30.549+06:00"
+                          updated_at: "2022-12-04T12:16:30.549+06:00"
                           name: Go
                           parent_id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                           children:
                             - id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                               library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                              created_at: '2022-12-04T12:17:37.674+06:00'
-                              updated_at: '2022-12-04T12:17:37.674+06:00'
+                              created_at: "2022-12-04T12:17:37.674+06:00"
+                              updated_at: "2022-12-04T12:17:37.674+06:00"
                               name: Conncurency
                               parent_id: ffde1310-6a26-41e1-9ddd-ea05ba77b517
                               children:
                                 - id: 61c0193d-c2f9-47a6-8221-63995b5f35cd
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:45:59.322+06:00'
-                                  updated_at: '2022-12-04T14:45:59.322+06:00'
+                                  created_at: "2022-12-04T14:45:59.322+06:00"
+                                  updated_at: "2022-12-04T14:45:59.322+06:00"
                                   name: Lession 01
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children:
                                     - id: 2017b3bb-e1b3-450a-9076-12b0021bd4e4
                                       library_id: 61c0193d-c2f9-47a6-8221-63995b5f35cd
-                                      created_at: '2022-12-05T15:38:01.607+06:00'
-                                      updated_at: '2022-12-05T15:38:01.607+06:00'
+                                      created_at: "2022-12-05T15:38:01.607+06:00"
+                                      updated_at: "2022-12-05T15:38:01.607+06:00"
                                       name: Lesson 01 - Sub
                                       parent_id: 61c0193d-c2f9-47a6-8221-63995b5f35cd
                                       children: []
                                 - id: 356be3b0-c392-4976-be96-b47b471f953e
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:04.752+06:00'
-                                  updated_at: '2022-12-04T14:46:04.752+06:00'
+                                  created_at: "2022-12-04T14:46:04.752+06:00"
+                                  updated_at: "2022-12-04T14:46:04.752+06:00"
                                   name: Lession 02
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children:
                                     - id: 47d26b2b-4ef0-4e08-8bfc-9374158e8b5f
                                       library_id: 356be3b0-c392-4976-be96-b47b471f953e
-                                      created_at: '2022-12-05T15:41:23.127+06:00'
-                                      updated_at: '2022-12-05T15:41:23.127+06:00'
+                                      created_at: "2022-12-05T15:41:23.127+06:00"
+                                      updated_at: "2022-12-05T15:41:23.127+06:00"
                                       name: Lesson 02 - Sub
                                       parent_id: 356be3b0-c392-4976-be96-b47b471f953e
                                       children: []
                                 - id: 34280ec7-3e85-4460-9d08-f8ac9dccead4
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:07.907+06:00'
-                                  updated_at: '2022-12-04T14:46:07.907+06:00'
+                                  created_at: "2022-12-04T14:46:07.907+06:00"
+                                  updated_at: "2022-12-04T14:46:07.907+06:00"
                                   name: Lession 05
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: 990cf2a7-b348-45ea-90a2-a9c1f1a9b019
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:13.21+06:00'
-                                  updated_at: '2022-12-04T14:46:13.21+06:00'
+                                  created_at: "2022-12-04T14:46:13.21+06:00"
+                                  updated_at: "2022-12-04T14:46:13.21+06:00"
                                   name: Lession 06
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: cfcfea7b-1e1b-4dfb-ad00-46f81b2bd173
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:17.658+06:00'
-                                  updated_at: '2022-12-04T14:46:17.658+06:00'
+                                  created_at: "2022-12-04T14:46:17.658+06:00"
+                                  updated_at: "2022-12-04T14:46:17.658+06:00"
                                   name: Lession 07
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: 21c31e59-f0d7-4569-a374-d3cc154e6806
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:22.144+06:00'
-                                  updated_at: '2022-12-04T14:46:22.144+06:00'
+                                  created_at: "2022-12-04T14:46:22.144+06:00"
+                                  updated_at: "2022-12-04T14:46:22.144+06:00"
                                   name: Lession 08
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:26.986+06:00'
-                                  updated_at: '2022-12-04T14:46:26.986+06:00'
+                                  created_at: "2022-12-04T14:46:26.986+06:00"
+                                  updated_at: "2022-12-04T14:46:26.986+06:00"
                                   name: Lession 09
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children:
                                     - id: 225e42a2-4e86-4727-bc6c-ce40c02f59e7
                                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                      created_at: '2022-12-04T14:46:44.931+06:00'
-                                      updated_at: '2022-12-04T14:46:44.931+06:00'
+                                      created_at: "2022-12-04T14:46:44.931+06:00"
+                                      updated_at: "2022-12-04T14:46:44.931+06:00"
                                       name: xfalfalf 09
                                       parent_id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                       children: []
                                     - id: 330903cb-ad7c-46f6-9688-3166e323b335
                                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                      created_at: '2022-12-04T14:46:51.229+06:00'
-                                      updated_at: '2022-12-04T14:46:51.229+06:00'
+                                      created_at: "2022-12-04T14:46:51.229+06:00"
+                                      updated_at: "2022-12-04T14:46:51.229+06:00"
                                       name: xfalfalf 01
                                       parent_id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                       children: []
                                     - id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                      created_at: '2022-12-04T14:46:55.314+06:00'
-                                      updated_at: '2022-12-04T14:46:55.314+06:00'
+                                      created_at: "2022-12-04T14:46:55.314+06:00"
+                                      updated_at: "2022-12-04T14:46:55.314+06:00"
                                       name: xfalfalf 02
                                       parent_id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                       children:
                                         - id: 86af9c81-9532-49a2-b6dd-347eae7174f6
                                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                          created_at: '2022-12-04T14:48:02.091+06:00'
-                                          updated_at: '2022-12-04T14:48:02.091+06:00'
+                                          created_at: "2022-12-04T14:48:02.091+06:00"
+                                          updated_at: "2022-12-04T14:48:02.091+06:00"
                                           name: xfalfalf 02
                                           parent_id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                           children: []
                                         - id: 845bc540-78b6-498f-a1ed-185b6b3d8319
                                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                          created_at: '2022-12-04T14:48:03.176+06:00'
-                                          updated_at: '2022-12-04T14:48:03.176+06:00'
+                                          created_at: "2022-12-04T14:48:03.176+06:00"
+                                          updated_at: "2022-12-04T14:48:03.176+06:00"
                                           name: xfalfalf 02
                                           parent_id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                           children: []
                                         - id: ff82c90b-2c39-4c33-a3fc-5c932fc4ece1
                                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                          created_at: '2022-12-04T16:01:51.924+06:00'
-                                          updated_at: '2022-12-04T16:01:51.924+06:00'
+                                          created_at: "2022-12-04T16:01:51.924+06:00"
+                                          updated_at: "2022-12-04T16:01:51.924+06:00"
                                           name: xfalfalf 02
                                           parent_id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                           children: []
                             - id: 99bbd2a4-1db0-4381-807c-487468785a19
                               library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                              created_at: '2022-12-04T12:17:47.086+06:00'
-                              updated_at: '2022-12-04T12:17:47.086+06:00'
+                              created_at: "2022-12-04T12:17:47.086+06:00"
+                              updated_at: "2022-12-04T12:17:47.086+06:00"
                               name: Channel
                               parent_id: ffde1310-6a26-41e1-9ddd-ea05ba77b517
                               children: []
                         - id: b2e97f49-808c-4fa7-9c2e-f72d782a48d2
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:16:45.951+06:00'
-                          updated_at: '2022-12-04T12:16:45.951+06:00'
+                          created_at: "2022-12-04T12:16:45.951+06:00"
+                          updated_at: "2022-12-04T12:16:45.951+06:00"
                           name: C Programming
                           parent_id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                           children: []
                         - id: 9f78b0de-acb7-4c27-88fa-de9973600410
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:17:01.977+06:00'
-                          updated_at: '2022-12-04T12:17:01.977+06:00'
+                          created_at: "2022-12-04T12:17:01.977+06:00"
+                          updated_at: "2022-12-04T12:17:01.977+06:00"
                           name: Rust Tutorial
                           parent_id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                           children: []
                     - id: b8848271-eefb-4dff-bc36-34507b14dffa
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T19:06:25.716+06:00'
-                      updated_at: '2022-12-04T19:06:25.716+06:00'
+                      created_at: "2022-12-04T19:06:25.716+06:00"
+                      updated_at: "2022-12-04T19:06:25.716+06:00"
                       name: SSC
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: 43223a7d-e4ac-416a-91ba-5a7126747c7c
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T19:07:08.197+06:00'
-                          updated_at: '2022-12-04T19:07:08.197+06:00'
+                          created_at: "2022-12-04T19:07:08.197+06:00"
+                          updated_at: "2022-12-04T19:07:08.197+06:00"
                           name: Bangla
                           parent_id: b8848271-eefb-4dff-bc36-34507b14dffa
                           children: []
                     - id: ac07fc8f-b39e-4372-bac0-81d593138003
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T19:13:17.031+06:00'
-                      updated_at: '2022-12-04T19:13:17.031+06:00'
+                      created_at: "2022-12-04T19:13:17.031+06:00"
+                      updated_at: "2022-12-04T19:13:17.031+06:00"
                       name: HSC
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: caded892-9f09-46c5-a52e-044052eb3f4a
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T19:13:39.715+06:00'
-                      updated_at: '2022-12-04T19:13:39.715+06:00'
+                      created_at: "2022-12-04T19:13:39.715+06:00"
+                      updated_at: "2022-12-04T19:13:39.715+06:00"
                       name: Sohel
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: 64836f31-0432-4851-a151-bb3b2f123213
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T20:02:14.026+06:00'
-                      updated_at: '2022-12-04T20:02:14.026+06:00'
+                      created_at: "2022-12-04T20:02:14.026+06:00"
+                      updated_at: "2022-12-04T20:02:14.026+06:00"
                       name: JSC
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: 6bc09f29-c645-47f8-b7fb-c1b265ba5c54
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T20:02:37.217+06:00'
-                      updated_at: '2022-12-04T20:02:37.217+06:00'
+                      created_at: "2022-12-04T20:02:37.217+06:00"
+                      updated_at: "2022-12-04T20:02:37.217+06:00"
                       name: PSC
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: 8cea1877-2128-43e8-8fa2-94932b3a4a8a
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T20:06:20.275+06:00'
-                      updated_at: '2022-12-04T20:06:20.275+06:00'
+                      created_at: "2022-12-04T20:06:20.275+06:00"
+                      updated_at: "2022-12-04T20:06:20.275+06:00"
                       name: JPX
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: 8460534f-3d1e-49f0-99ae-26701f546f3d
                           library_id: 8cea1877-2128-43e8-8fa2-94932b3a4a8a
-                          created_at: '2022-12-06T16:29:50.783+06:00'
-                          updated_at: '2022-12-06T16:29:50.783+06:00'
+                          created_at: "2022-12-06T16:29:50.783+06:00"
+                          updated_at: "2022-12-06T16:29:50.783+06:00"
                           name: JPX-SUB
                           parent_id: 8cea1877-2128-43e8-8fa2-94932b3a4a8a
                           children: []
                     - id: d7070df1-bc30-4bc3-8ff7-147aa5cbfbe3
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-05T11:57:36.783+06:00'
-                      updated_at: '2022-12-05T11:57:36.783+06:00'
+                      created_at: "2022-12-05T11:57:36.783+06:00"
+                      updated_at: "2022-12-05T11:57:36.783+06:00"
                       name: NPX
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: a2dce2c7-cd88-43b4-9e44-b7992c418702
                           library_id: d7070df1-bc30-4bc3-8ff7-147aa5cbfbe3
-                          created_at: '2022-12-05T15:33:10.747+06:00'
-                          updated_at: '2022-12-05T15:33:10.747+06:00'
+                          created_at: "2022-12-05T15:33:10.747+06:00"
+                          updated_at: "2022-12-05T15:33:10.747+06:00"
                           name: NPX_SUB
                           parent_id: d7070df1-bc30-4bc3-8ff7-147aa5cbfbe3
                           children:
                             - id: 843a6d4a-a5aa-4885-bea3-83f66074e7ce
                               library_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
-                              created_at: '2022-12-06T16:21:02.777+06:00'
-                              updated_at: '2022-12-06T16:21:02.777+06:00'
+                              created_at: "2022-12-06T16:21:02.777+06:00"
+                              updated_at: "2022-12-06T16:21:02.777+06:00"
                               name: NPX_SUB-SUB
                               parent_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
                               children: []
                             - id: 499397d3-a6a3-40d4-80a1-1bbf3c464452
                               library_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
-                              created_at: '2022-12-06T16:22:40.946+06:00'
-                              updated_at: '2022-12-06T16:22:40.946+06:00'
+                              created_at: "2022-12-06T16:22:40.946+06:00"
+                              updated_at: "2022-12-06T16:22:40.946+06:00"
                               name: NPX_SUB 2
                               parent_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
                               children:
                                 - id: 78232371-e76c-4544-9bbd-576149acf585
                                   library_id: 499397d3-a6a3-40d4-80a1-1bbf3c464452
-                                  created_at: '2022-12-06T16:27:20.918+06:00'
-                                  updated_at: '2022-12-06T16:27:20.918+06:00'
+                                  created_at: "2022-12-06T16:27:20.918+06:00"
+                                  updated_at: "2022-12-06T16:27:20.918+06:00"
                                   name: NPX_SUB 2/2
                                   parent_id: 499397d3-a6a3-40d4-80a1-1bbf3c464452
                                   children: []
                     - id: 0c462f1a-d9d3-44c5-bcb7-a50f9b9b5947
                       library_id: 4c24ae13-478f-4d89-bf9f-ebab68c1424a
-                      created_at: '2022-12-11T16:47:04.152+06:00'
-                      updated_at: '2022-12-11T16:47:04.152+06:00'
+                      created_at: "2022-12-11T16:47:04.152+06:00"
+                      updated_at: "2022-12-11T16:47:04.152+06:00"
                       name: Bangla
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                 success: true
       operationId: get-libraries-id-collections
@@ -407,7 +407,7 @@ paths:
       summary: Create Collections
       operationId: post-libraries-id-collections
       responses:
-        '200':
+        "200":
           description: OK
       description: Create collection
       parameters:
@@ -425,7 +425,7 @@ paths:
               parent_id:
                 type: string
                 format: uuid
-  '/libraries/{libaryid}/collections/{collectionid}':
+  "/libraries/{libaryid}/collections/{collectionid}":
     parameters:
       - type: string
         name: libaryid
@@ -442,7 +442,7 @@ paths:
       tags:
         - Collections
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -500,297 +500,297 @@ paths:
                   data:
                     - id: 21d26242-b240-4afb-a2c4-170fb71fc6d3
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T12:08:58.898+06:00'
-                      updated_at: '2022-12-04T12:08:58.898+06:00'
+                      created_at: "2022-12-04T12:08:58.898+06:00"
+                      updated_at: "2022-12-04T12:08:58.898+06:00"
                       name: test
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: dd003855-149e-44af-ac50-3921a4e02500
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:11:52.543+06:00'
-                          updated_at: '2022-12-04T12:11:52.543+06:00'
+                          created_at: "2022-12-04T12:11:52.543+06:00"
+                          updated_at: "2022-12-04T12:11:52.543+06:00"
                           name: test
                           parent_id: 21d26242-b240-4afb-a2c4-170fb71fc6d3
                           children: []
                         - id: b7460472-b7ad-46b9-a4fb-ebd1dfec923b
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:12:03.778+06:00'
-                          updated_at: '2022-12-04T12:12:03.778+06:00'
+                          created_at: "2022-12-04T12:12:03.778+06:00"
+                          updated_at: "2022-12-04T12:12:03.778+06:00"
                           name: test
                           parent_id: 21d26242-b240-4afb-a2c4-170fb71fc6d3
                           children: []
                     - id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T12:12:24.001+06:00'
-                      updated_at: '2022-12-04T12:12:24.001+06:00'
+                      created_at: "2022-12-04T12:12:24.001+06:00"
+                      updated_at: "2022-12-04T12:12:24.001+06:00"
                       name: Movies
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: e7ec9662-de19-4791-8e82-d3c4860afc4d
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:13:21.841+06:00'
-                          updated_at: '2022-12-04T12:13:21.841+06:00'
+                          created_at: "2022-12-04T12:13:21.841+06:00"
+                          updated_at: "2022-12-04T12:13:21.841+06:00"
                           name: Bangla Movies
                           parent_id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                           children: []
                         - id: 9d61383c-1ecb-4750-af49-9bca83e2b45c
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:13:31.723+06:00'
-                          updated_at: '2022-12-04T12:13:31.723+06:00'
+                          created_at: "2022-12-04T12:13:31.723+06:00"
+                          updated_at: "2022-12-04T12:13:31.723+06:00"
                           name: Enlish Movies
                           parent_id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                           children: []
                         - id: fbe6138b-804f-479a-931e-46436cddd50c
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:13:43.937+06:00'
-                          updated_at: '2022-12-04T12:13:43.937+06:00'
+                          created_at: "2022-12-04T12:13:43.937+06:00"
+                          updated_at: "2022-12-04T12:13:43.937+06:00"
                           name: Catoon Movies
                           parent_id: 166d5f8d-e475-4fe9-8d05-306be9a5e378
                           children: []
                     - id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T12:16:03.072+06:00'
-                      updated_at: '2022-12-04T12:16:03.072+06:00'
+                      created_at: "2022-12-04T12:16:03.072+06:00"
+                      updated_at: "2022-12-04T12:16:03.072+06:00"
                       name: Tutorial
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: ffde1310-6a26-41e1-9ddd-ea05ba77b517
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:16:30.549+06:00'
-                          updated_at: '2022-12-04T12:16:30.549+06:00'
+                          created_at: "2022-12-04T12:16:30.549+06:00"
+                          updated_at: "2022-12-04T12:16:30.549+06:00"
                           name: Go
                           parent_id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                           children:
                             - id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                               library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                              created_at: '2022-12-04T12:17:37.674+06:00'
-                              updated_at: '2022-12-04T12:17:37.674+06:00'
+                              created_at: "2022-12-04T12:17:37.674+06:00"
+                              updated_at: "2022-12-04T12:17:37.674+06:00"
                               name: Conncurency
                               parent_id: ffde1310-6a26-41e1-9ddd-ea05ba77b517
                               children:
                                 - id: 61c0193d-c2f9-47a6-8221-63995b5f35cd
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:45:59.322+06:00'
-                                  updated_at: '2022-12-04T14:45:59.322+06:00'
+                                  created_at: "2022-12-04T14:45:59.322+06:00"
+                                  updated_at: "2022-12-04T14:45:59.322+06:00"
                                   name: Lession 01
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children:
                                     - id: 2017b3bb-e1b3-450a-9076-12b0021bd4e4
                                       library_id: 61c0193d-c2f9-47a6-8221-63995b5f35cd
-                                      created_at: '2022-12-05T15:38:01.607+06:00'
-                                      updated_at: '2022-12-05T15:38:01.607+06:00'
+                                      created_at: "2022-12-05T15:38:01.607+06:00"
+                                      updated_at: "2022-12-05T15:38:01.607+06:00"
                                       name: Lesson 01 - Sub
                                       parent_id: 61c0193d-c2f9-47a6-8221-63995b5f35cd
                                       children: []
                                 - id: 356be3b0-c392-4976-be96-b47b471f953e
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:04.752+06:00'
-                                  updated_at: '2022-12-04T14:46:04.752+06:00'
+                                  created_at: "2022-12-04T14:46:04.752+06:00"
+                                  updated_at: "2022-12-04T14:46:04.752+06:00"
                                   name: Lession 02
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children:
                                     - id: 47d26b2b-4ef0-4e08-8bfc-9374158e8b5f
                                       library_id: 356be3b0-c392-4976-be96-b47b471f953e
-                                      created_at: '2022-12-05T15:41:23.127+06:00'
-                                      updated_at: '2022-12-05T15:41:23.127+06:00'
+                                      created_at: "2022-12-05T15:41:23.127+06:00"
+                                      updated_at: "2022-12-05T15:41:23.127+06:00"
                                       name: Lesson 02 - Sub
                                       parent_id: 356be3b0-c392-4976-be96-b47b471f953e
                                       children: []
                                 - id: 34280ec7-3e85-4460-9d08-f8ac9dccead4
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:07.907+06:00'
-                                  updated_at: '2022-12-04T14:46:07.907+06:00'
+                                  created_at: "2022-12-04T14:46:07.907+06:00"
+                                  updated_at: "2022-12-04T14:46:07.907+06:00"
                                   name: Lession 05
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: 990cf2a7-b348-45ea-90a2-a9c1f1a9b019
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:13.21+06:00'
-                                  updated_at: '2022-12-04T14:46:13.21+06:00'
+                                  created_at: "2022-12-04T14:46:13.21+06:00"
+                                  updated_at: "2022-12-04T14:46:13.21+06:00"
                                   name: Lession 06
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: cfcfea7b-1e1b-4dfb-ad00-46f81b2bd173
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:17.658+06:00'
-                                  updated_at: '2022-12-04T14:46:17.658+06:00'
+                                  created_at: "2022-12-04T14:46:17.658+06:00"
+                                  updated_at: "2022-12-04T14:46:17.658+06:00"
                                   name: Lession 07
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: 21c31e59-f0d7-4569-a374-d3cc154e6806
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:22.144+06:00'
-                                  updated_at: '2022-12-04T14:46:22.144+06:00'
+                                  created_at: "2022-12-04T14:46:22.144+06:00"
+                                  updated_at: "2022-12-04T14:46:22.144+06:00"
                                   name: Lession 08
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children: []
                                 - id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                   library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                  created_at: '2022-12-04T14:46:26.986+06:00'
-                                  updated_at: '2022-12-04T14:46:26.986+06:00'
+                                  created_at: "2022-12-04T14:46:26.986+06:00"
+                                  updated_at: "2022-12-04T14:46:26.986+06:00"
                                   name: Lession 09
                                   parent_id: 666e6f4f-78a7-44cf-971c-5b670086ae51
                                   children:
                                     - id: 225e42a2-4e86-4727-bc6c-ce40c02f59e7
                                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                      created_at: '2022-12-04T14:46:44.931+06:00'
-                                      updated_at: '2022-12-04T14:46:44.931+06:00'
+                                      created_at: "2022-12-04T14:46:44.931+06:00"
+                                      updated_at: "2022-12-04T14:46:44.931+06:00"
                                       name: xfalfalf 09
                                       parent_id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                       children: []
                                     - id: 330903cb-ad7c-46f6-9688-3166e323b335
                                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                      created_at: '2022-12-04T14:46:51.229+06:00'
-                                      updated_at: '2022-12-04T14:46:51.229+06:00'
+                                      created_at: "2022-12-04T14:46:51.229+06:00"
+                                      updated_at: "2022-12-04T14:46:51.229+06:00"
                                       name: xfalfalf 01
                                       parent_id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                       children: []
                                     - id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                      created_at: '2022-12-04T14:46:55.314+06:00'
-                                      updated_at: '2022-12-04T14:46:55.314+06:00'
+                                      created_at: "2022-12-04T14:46:55.314+06:00"
+                                      updated_at: "2022-12-04T14:46:55.314+06:00"
                                       name: xfalfalf 02
                                       parent_id: 558da0e2-85c0-43bc-b4eb-d3f10f7aa4d8
                                       children:
                                         - id: 86af9c81-9532-49a2-b6dd-347eae7174f6
                                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                          created_at: '2022-12-04T14:48:02.091+06:00'
-                                          updated_at: '2022-12-04T14:48:02.091+06:00'
+                                          created_at: "2022-12-04T14:48:02.091+06:00"
+                                          updated_at: "2022-12-04T14:48:02.091+06:00"
                                           name: xfalfalf 02
                                           parent_id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                           children: []
                                         - id: 845bc540-78b6-498f-a1ed-185b6b3d8319
                                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                          created_at: '2022-12-04T14:48:03.176+06:00'
-                                          updated_at: '2022-12-04T14:48:03.176+06:00'
+                                          created_at: "2022-12-04T14:48:03.176+06:00"
+                                          updated_at: "2022-12-04T14:48:03.176+06:00"
                                           name: xfalfalf 02
                                           parent_id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                           children: []
                                         - id: ff82c90b-2c39-4c33-a3fc-5c932fc4ece1
                                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                                          created_at: '2022-12-04T16:01:51.924+06:00'
-                                          updated_at: '2022-12-04T16:01:51.924+06:00'
+                                          created_at: "2022-12-04T16:01:51.924+06:00"
+                                          updated_at: "2022-12-04T16:01:51.924+06:00"
                                           name: xfalfalf 02
                                           parent_id: 7b3ade95-b9e3-48a9-8ce7-635c4afda2af
                                           children: []
                             - id: 99bbd2a4-1db0-4381-807c-487468785a19
                               library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                              created_at: '2022-12-04T12:17:47.086+06:00'
-                              updated_at: '2022-12-04T12:17:47.086+06:00'
+                              created_at: "2022-12-04T12:17:47.086+06:00"
+                              updated_at: "2022-12-04T12:17:47.086+06:00"
                               name: Channel
                               parent_id: ffde1310-6a26-41e1-9ddd-ea05ba77b517
                               children: []
                         - id: b2e97f49-808c-4fa7-9c2e-f72d782a48d2
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:16:45.951+06:00'
-                          updated_at: '2022-12-04T12:16:45.951+06:00'
+                          created_at: "2022-12-04T12:16:45.951+06:00"
+                          updated_at: "2022-12-04T12:16:45.951+06:00"
                           name: C Programming
                           parent_id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                           children: []
                         - id: 9f78b0de-acb7-4c27-88fa-de9973600410
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T12:17:01.977+06:00'
-                          updated_at: '2022-12-04T12:17:01.977+06:00'
+                          created_at: "2022-12-04T12:17:01.977+06:00"
+                          updated_at: "2022-12-04T12:17:01.977+06:00"
                           name: Rust Tutorial
                           parent_id: 89a67707-260d-44d1-9bd6-ab6096e21a9c
                           children: []
                     - id: b8848271-eefb-4dff-bc36-34507b14dffa
                       library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                      created_at: '2022-12-04T19:06:25.716+06:00'
-                      updated_at: '2022-12-04T19:06:25.716+06:00'
+                      created_at: "2022-12-04T19:06:25.716+06:00"
+                      updated_at: "2022-12-04T19:06:25.716+06:00"
                       name: SSC
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: 43223a7d-e4ac-416a-91ba-5a7126747c7c
                           library_id: 4067176e-da36-41a1-b178-34ac9e389039
-                          created_at: '2022-12-04T19:07:08.197+06:00'
-                          updated_at: '2022-12-04T19:07:08.197+06:00'
+                          created_at: "2022-12-04T19:07:08.197+06:00"
+                          updated_at: "2022-12-04T19:07:08.197+06:00"
                           name: Bangla
                           parent_id: b8848271-eefb-4dff-bc36-34507b14dffa
                           children: []
                     - id: ac07fc8f-b39e-4372-bac0-81d593138003
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T19:13:17.031+06:00'
-                      updated_at: '2022-12-04T19:13:17.031+06:00'
+                      created_at: "2022-12-04T19:13:17.031+06:00"
+                      updated_at: "2022-12-04T19:13:17.031+06:00"
                       name: HSC
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: caded892-9f09-46c5-a52e-044052eb3f4a
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T19:13:39.715+06:00'
-                      updated_at: '2022-12-04T19:13:39.715+06:00'
+                      created_at: "2022-12-04T19:13:39.715+06:00"
+                      updated_at: "2022-12-04T19:13:39.715+06:00"
                       name: Sohel
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: 64836f31-0432-4851-a151-bb3b2f123213
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T20:02:14.026+06:00'
-                      updated_at: '2022-12-04T20:02:14.026+06:00'
+                      created_at: "2022-12-04T20:02:14.026+06:00"
+                      updated_at: "2022-12-04T20:02:14.026+06:00"
                       name: JSC
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: 6bc09f29-c645-47f8-b7fb-c1b265ba5c54
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T20:02:37.217+06:00'
-                      updated_at: '2022-12-04T20:02:37.217+06:00'
+                      created_at: "2022-12-04T20:02:37.217+06:00"
+                      updated_at: "2022-12-04T20:02:37.217+06:00"
                       name: PSC
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                     - id: 8cea1877-2128-43e8-8fa2-94932b3a4a8a
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-04T20:06:20.275+06:00'
-                      updated_at: '2022-12-04T20:06:20.275+06:00'
+                      created_at: "2022-12-04T20:06:20.275+06:00"
+                      updated_at: "2022-12-04T20:06:20.275+06:00"
                       name: JPX
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: 8460534f-3d1e-49f0-99ae-26701f546f3d
                           library_id: 8cea1877-2128-43e8-8fa2-94932b3a4a8a
-                          created_at: '2022-12-06T16:29:50.783+06:00'
-                          updated_at: '2022-12-06T16:29:50.783+06:00'
+                          created_at: "2022-12-06T16:29:50.783+06:00"
+                          updated_at: "2022-12-06T16:29:50.783+06:00"
                           name: JPX-SUB
                           parent_id: 8cea1877-2128-43e8-8fa2-94932b3a4a8a
                           children: []
                     - id: d7070df1-bc30-4bc3-8ff7-147aa5cbfbe3
                       library_id: 39c58996-932c-4d7b-9577-aa64e051f25e
-                      created_at: '2022-12-05T11:57:36.783+06:00'
-                      updated_at: '2022-12-05T11:57:36.783+06:00'
+                      created_at: "2022-12-05T11:57:36.783+06:00"
+                      updated_at: "2022-12-05T11:57:36.783+06:00"
                       name: NPX
-                      parent_id: ''
+                      parent_id: ""
                       children:
                         - id: a2dce2c7-cd88-43b4-9e44-b7992c418702
                           library_id: d7070df1-bc30-4bc3-8ff7-147aa5cbfbe3
-                          created_at: '2022-12-05T15:33:10.747+06:00'
-                          updated_at: '2022-12-05T15:33:10.747+06:00'
+                          created_at: "2022-12-05T15:33:10.747+06:00"
+                          updated_at: "2022-12-05T15:33:10.747+06:00"
                           name: NPX_SUB
                           parent_id: d7070df1-bc30-4bc3-8ff7-147aa5cbfbe3
                           children:
                             - id: 843a6d4a-a5aa-4885-bea3-83f66074e7ce
                               library_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
-                              created_at: '2022-12-06T16:21:02.777+06:00'
-                              updated_at: '2022-12-06T16:21:02.777+06:00'
+                              created_at: "2022-12-06T16:21:02.777+06:00"
+                              updated_at: "2022-12-06T16:21:02.777+06:00"
                               name: NPX_SUB-SUB
                               parent_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
                               children: []
                             - id: 499397d3-a6a3-40d4-80a1-1bbf3c464452
                               library_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
-                              created_at: '2022-12-06T16:22:40.946+06:00'
-                              updated_at: '2022-12-06T16:22:40.946+06:00'
+                              created_at: "2022-12-06T16:22:40.946+06:00"
+                              updated_at: "2022-12-06T16:22:40.946+06:00"
                               name: NPX_SUB 2
                               parent_id: a2dce2c7-cd88-43b4-9e44-b7992c418702
                               children:
                                 - id: 78232371-e76c-4544-9bbd-576149acf585
                                   library_id: 499397d3-a6a3-40d4-80a1-1bbf3c464452
-                                  created_at: '2022-12-06T16:27:20.918+06:00'
-                                  updated_at: '2022-12-06T16:27:20.918+06:00'
+                                  created_at: "2022-12-06T16:27:20.918+06:00"
+                                  updated_at: "2022-12-06T16:27:20.918+06:00"
                                   name: NPX_SUB 2/2
                                   parent_id: 499397d3-a6a3-40d4-80a1-1bbf3c464452
                                   children: []
                     - id: 0c462f1a-d9d3-44c5-bcb7-a50f9b9b5947
                       library_id: 4c24ae13-478f-4d89-bf9f-ebab68c1424a
-                      created_at: '2022-12-11T16:47:04.152+06:00'
-                      updated_at: '2022-12-11T16:47:04.152+06:00'
+                      created_at: "2022-12-11T16:47:04.152+06:00"
+                      updated_at: "2022-12-11T16:47:04.152+06:00"
                       name: Bangla
-                      parent_id: ''
+                      parent_id: ""
                       children: []
                 success: true
       operationId: get-details-libraries-id-collections
@@ -801,16 +801,16 @@ paths:
       summary: Update Collections
       operationId: put-libraries-id-collections-id
       responses:
-        '200':
+        "200":
           description: OK
-      description: ''
+      description: ""
       parameters:
         - in: body
           name: body
           schema:
             type: object
             properties: {}
-  '/libraries/{libraryId}/videos':
+  "/libraries/{libraryId}/videos":
     parameters:
       - type: string
         name: libraryId
@@ -822,7 +822,7 @@ paths:
       tags:
         - Videos
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -861,7 +861,7 @@ paths:
                     preview_animation_thumbnail_url:
                       type: string
                     thumbnail_paths:
-                      type: 'null'
+                      type: "null"
                     captions:
                       type: array
                       items:
@@ -893,17 +893,17 @@ paths:
                 result:
                   - id: 2347a717-90d5-405b-9b11-5a7fde61b840
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Kaya Daugherty
                     views: 13
                     length: 118
                     formatted_duration: 1m58s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 62
                     height: 234
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -911,21 +911,21 @@ paths:
                     uploaded_at: 21-Dec-2007
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: e4ec3b7e-ea75-4a58-a19e-72d651f08b6c
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Jefferey McDermott
                     views: 181
                     length: 53
                     formatted_duration: 53s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 142
                     height: 251
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -933,21 +933,21 @@ paths:
                     uploaded_at: 23-Jan-2013
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: e8ba9cf7-eef4-41c2-8f14-8a49d3af58d3
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Jarvis Larkin
                     views: 235
                     length: 207
                     formatted_duration: 3m27s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 172
                     height: 154
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -955,8 +955,8 @@ paths:
                     uploaded_at: 13-Oct-2013
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 7bcc42f4-43ce-4261-9796-53698ba7c26d
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
                     collection_id: 3753c71a-e6b5-4e12-8bb9-4a69ec57da29
@@ -964,12 +964,12 @@ paths:
                     views: 255
                     length: 162
                     formatted_duration: 2m42s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 98
                     height: 119
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -977,21 +977,21 @@ paths:
                     uploaded_at: 14-Sep-2009
                     created_at: 18-Dec-2022
                     updated_at: 19-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 1e2a0acf-3ff8-4bd9-8fb2-23af8eab9184
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Flavio Yundt
                     views: 248
                     length: 206
                     formatted_duration: 3m26s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 135
                     height: 40
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -999,21 +999,21 @@ paths:
                     uploaded_at: 26-Dec-1952
                     created_at: 18-Dec-2022
                     updated_at: 19-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: ce06de67-6d79-4106-bb6a-deed013b32a0
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Serena Kutch
                     views: 88
                     length: 176
                     formatted_duration: 2m56s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 143
                     height: 182
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1021,21 +1021,21 @@ paths:
                     uploaded_at: 15-May-1979
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: a7d09917-2e0d-45df-a261-154a9c39f139
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Lucius Bailey
                     views: 245
                     length: 74
                     formatted_duration: 1m14s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 200
                     height: 192
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1043,21 +1043,21 @@ paths:
                     uploaded_at: 09-Feb-1969
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: b307500d-9445-40a7-9e33-a311a78a18b3
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Lavon Bernier
                     views: 192
                     length: 48
                     formatted_duration: 48s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 3
                     height: 143
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1065,21 +1065,21 @@ paths:
                     uploaded_at: 06-Apr-1973
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: f38d25c0-7721-44c8-9076-3ce07deb85aa
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Sonya Blanda
                     views: 6
                     length: 43
                     formatted_duration: 43s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 49
                     height: 49
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1087,21 +1087,21 @@ paths:
                     uploaded_at: 20-Jul-1922
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 132c5b25-a793-49d7-ab82-3e2e8fe9bd70
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Rhea Steuber
                     views: 72
                     length: 132
                     formatted_duration: 2m12s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 135
                     height: 122
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1109,21 +1109,21 @@ paths:
                     uploaded_at: 20-Jan-1927
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 9b3658ec-c37d-4fad-9b41-0b156a183b90
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Marjory Hudson
                     views: 37
                     length: 201
                     formatted_duration: 3m21s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 196
                     height: 173
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1131,21 +1131,21 @@ paths:
                     uploaded_at: 13-Dec-1904
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 27b9f5b8-20aa-4bbe-aa91-dcc7aa7a441d
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Kathryne Moen
                     views: 70
                     length: 155
                     formatted_duration: 2m35s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 91
                     height: 229
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1153,21 +1153,21 @@ paths:
                     uploaded_at: 12-Mar-1959
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 00dc3de5-a447-4640-90e9-6e51d173e073
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Herta Kirlin
                     views: 38
                     length: 229
                     formatted_duration: 3m49s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 212
                     height: 205
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1175,21 +1175,21 @@ paths:
                     uploaded_at: 17-Apr-2016
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: fe3cf8c2-fea9-47f4-bb3f-93c535dbdbc6
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Lilly Mohr
                     views: 199
                     length: 55
                     formatted_duration: 55s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 144
                     height: 113
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1197,21 +1197,21 @@ paths:
                     uploaded_at: 20-Sep-1977
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 0eee837f-b51b-42ff-bf8e-ff1adbe3bade
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Conor Wiegand
                     views: 230
                     length: 240
                     formatted_duration: 4m0s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 8
                     height: 37
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1219,21 +1219,21 @@ paths:
                     uploaded_at: 03-Aug-1955
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: f7198948-f045-4d33-8863-ea160fd15ab3
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Arvel Goldner
                     views: 196
                     length: 3
                     formatted_duration: 3s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 122
                     height: 139
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1241,21 +1241,21 @@ paths:
                     uploaded_at: 22-Aug-1914
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: bc196053-532d-429a-984c-9b7e5f730940
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Trystan Ebert
                     views: 44
                     length: 94
                     formatted_duration: 1m34s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 197
                     height: 100
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1263,21 +1263,21 @@ paths:
                     uploaded_at: 28-Dec-1997
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: b2fa5f39-b2ca-44a6-9237-c3a0921db8f0
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Elnora Walter
                     views: 234
                     length: 231
                     formatted_duration: 3m51s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 205
                     height: 186
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1285,21 +1285,21 @@ paths:
                     uploaded_at: 28-Aug-2008
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 6256b283-90d7-4e41-921f-13354d230eb7
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Kraig Barrows
                     views: 180
                     length: 218
                     formatted_duration: 3m38s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 76
                     height: 111
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1307,21 +1307,21 @@ paths:
                     uploaded_at: 05-Nov-1934
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: ef53eb54-76e0-4b6e-a280-7cc603f009cf
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Archibald Kunze
                     views: 234
                     length: 25
                     formatted_duration: 25s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 46
                     height: 20
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1329,21 +1329,21 @@ paths:
                     uploaded_at: 09-Oct-1957
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: bf28ef62-9138-4c9f-99cd-070b1e3a14a2
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Alejandra Wisozk
                     views: 74
                     length: 169
                     formatted_duration: 2m49s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 19
                     height: 46
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1351,21 +1351,21 @@ paths:
                     uploaded_at: 02-Mar-2014
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 2772b8e2-1707-4a69-9447-0570101a305f
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Laney Connelly
                     views: 173
                     length: 155
                     formatted_duration: 2m35s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 150
                     height: 60
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1373,21 +1373,21 @@ paths:
                     uploaded_at: 21-Aug-2011
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: e60bd2dc-fac0-4719-a5b1-c4e14bd8bfc5
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Lorna Shanahan
                     views: 15
                     length: 24
                     formatted_duration: 24s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 188
                     height: 220
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1395,21 +1395,21 @@ paths:
                     uploaded_at: 05-Nov-1958
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 874e862f-2aa2-438a-8950-782e1da7ceee
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Hunter Bins
                     views: 251
                     length: 113
                     formatted_duration: 1m53s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 227
                     height: 221
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1417,21 +1417,21 @@ paths:
                     uploaded_at: 23-Dec-1963
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 5cba79d7-50b7-4d7c-9df8-6b94ff15a412
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Chadrick Donnelly
                     views: 223
                     length: 142
                     formatted_duration: 2m22s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 125
                     height: 137
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1439,21 +1439,21 @@ paths:
                     uploaded_at: 25-Dec-1908
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 25d1dca6-8090-4a38-9dc9-daa5cb611b14
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Naomi Goodwin
                     views: 126
                     length: 49
                     formatted_duration: 49s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 246
                     height: 242
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1461,21 +1461,21 @@ paths:
                     uploaded_at: 15-May-1989
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 09505d02-01b5-4bc6-b771-7c8e0aae078d
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Reba Brakus
                     views: 122
                     length: 198
                     formatted_duration: 3m18s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 158
                     height: 127
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1483,21 +1483,21 @@ paths:
                     uploaded_at: 19-Aug-2019
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 2bf9c74e-fd81-48b4-be0f-ac115c8c3862
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Sherman Waelchi
                     views: 124
                     length: 16
                     formatted_duration: 16s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 166
                     height: 17
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1505,21 +1505,21 @@ paths:
                     uploaded_at: 14-Dec-1962
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: bee3184a-ee7a-4dac-8251-aaf28aaf6e98
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Drake Olson
                     views: 100
                     length: 197
                     formatted_duration: 3m17s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 6
                     height: 193
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1527,21 +1527,21 @@ paths:
                     uploaded_at: 04-Jan-1901
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                   - id: 636e2ac0-a487-4871-bd79-2434a962edb6
                     library_id: b1499d37-8b26-403f-8947-1ae3193b09e7
-                    collection_id: ''
+                    collection_id: ""
                     name: Katelin Ward
                     views: 4
                     length: 106
                     formatted_duration: 1m46s
-                    status: ''
+                    status: ""
                     framerate: 0
                     width: 154
                     height: 72
-                    thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg'
-                    preview_animation_thumbnail_url: 'https://vz-f22fff34-1c7.b-cdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp'
+                    thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/thumbnail.jpg"
+                    preview_animation_thumbnail_url: "https://vz-f22fff34-1c7.gpcdn.net/9e4ec55f-beca-4f28-a1b1-e0bb0fa3348f/preview.webp"
                     thumbnail_paths: null
                     captions: []
                     chapters: []
@@ -1549,8 +1549,8 @@ paths:
                     uploaded_at: 27-Nov-2017
                     created_at: 18-Dec-2022
                     updated_at: 18-Dec-2022
-                    direct_play_url: 'https://video.bunnycdn.com/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e'
-                    manifest_url: 'https://vz-40420aee-1b7.b-cdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8'
+                    direct_play_url: "https://player.gotipath.com/stream/play/80938/fdb8783c-7c13-4fa0-a817-fd150fb9b92e"
+                    manifest_url: "https://vz-40420aee-1b7.gpcdn.net/fdb8783c-7c13-4fa0-a817-fd150fb9b92e/playlist.m3u8"
                 success: true
       operationId: get-libraries-id-videos
       description: Get All Videos created.
@@ -1560,7 +1560,7 @@ paths:
         - Videos
       operationId: post-libraries-id-videos
       responses:
-        '201':
+        "201":
           description: Created
           schema:
             type: object
@@ -1601,17 +1601,17 @@ paths:
                   thumbnail_count:
                     type: string
                   thumbnail_paths:
-                    type: 'null'
+                    type: "null"
                   captions:
-                    type: 'null'
+                    type: "null"
                   chapters:
-                    type: 'null'
+                    type: "null"
                   tags:
-                    type: 'null'
+                    type: "null"
                   meta_data:
-                    type: 'null'
+                    type: "null"
                   moments:
-                    type: 'null'
+                    type: "null"
                   uploaded_at:
                     type: string
                   created_at:
@@ -1633,35 +1633,35 @@ paths:
                 message: Videos create.
                 result:
                   id: 36620940-f6e4-4689-b132-3a13ab23f584
-                  customer_id: ''
+                  customer_id: ""
                   library_id: 34f4dcc3-a5f0-48dd-8c62-b467929d2ec6
-                  collection_id: ''
+                  collection_id: ""
                   name: Test Video
-                  raw_path: ''
-                  raw_file_name: ''
+                  raw_path: ""
+                  raw_file_name: ""
                   views: 0
                   length: 0
                   status: pending
                   framerate: 0
                   width: 0
                   height: 0
-                  thumbnail_path: ''
-                  thumbnail_count: ''
+                  thumbnail_path: ""
+                  thumbnail_count: ""
                   thumbnail_paths: null
                   captions: null
                   chapters: null
                   tags: null
                   meta_data: null
                   moments: null
-                  uploaded_at: '0001-01-01T00:00:00Z'
-                  created_at: '2023-01-10T16:56:34.397+06:00'
-                  updated_at: '2023-01-10T16:56:34.397+06:00'
-                  UploadType: ''
-                  UploadThrow: ''
+                  uploaded_at: "0001-01-01T00:00:00Z"
+                  created_at: "2023-01-10T16:56:34.397+06:00"
+                  updated_at: "2023-01-10T16:56:34.397+06:00"
+                  UploadType: ""
+                  UploadThrow: ""
                   transcoding_progress: 0
                   TotalWatchTime: 0
                 success: true
-      description: 'Create Video '
+      description: "Create Video "
       parameters:
         - in: body
           name: body
@@ -1670,7 +1670,7 @@ paths:
             x-examples:
               Example 1:
                 name: Test Video
-                collection_id: ''
+                collection_id: ""
             properties:
               name:
                 type: string
@@ -1685,10 +1685,10 @@ paths:
         - Videos
       operationId: put-libraries-id-videos
       responses:
-        '200':
+        "200":
           description: OK
-      description: ''
-  '/libraries/{libraryId}/livestreams':
+      description: ""
+  "/libraries/{libraryId}/livestreams":
     parameters:
       - type: string
         name: libraryId
@@ -1699,7 +1699,7 @@ paths:
       tags:
         - Live Streams
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -1764,53 +1764,53 @@ paths:
                     app_name: eardwdnkyt
                     stream_name: livestreamgotipath
                     stream_type: event
-                    ended_at: '2023-01-08 06:10:31'
-                    started_at: '2023-01-08 06:10:31'
+                    ended_at: "2023-01-08 06:10:31"
+                    started_at: "2023-01-08 06:10:31"
                     status: To be started
-                    ingestion_url: 'rtmp://lms-public-ingest.swiftfederation.com/eardwdnkyt'
+                    ingestion_url: "rtmp://lms-public-ingest.swiftfederation.com/eardwdnkyt"
                     ingestion_key: livestreamgotipath?token=/
                     ingestion_protocol: rtmp
-                    direct_play_url: 'https://comming-soon.gotipath.com'
+                    direct_play_url: "https://comming-soon.gotipath.com"
                     outputs:
                       - playlist:
                           - preset: 240p
-                            uri: 'https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-240p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-240p.m3u8"
                           - preset: 360p
-                            uri: 'https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-360p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-360p.m3u8"
                           - preset: 480p
-                            uri: 'https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-480p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-480p.m3u8"
                           - preset: 720p
-                            uri: 'https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-720p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-720p.m3u8"
                           - preset: 1080p
-                            uri: 'https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-1080p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-1080p.m3u8"
                         protocol: hls
-                        manifest: 'https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-manifest.m3u8'
+                        manifest: "https://kkcfcbdc.gpcdn.net/eardwdnkyt/livestreamgotipath-manifest.m3u8"
                   - id: 5b9a6852-4b55-42bd-8b62-fe5ea82aa868
                     library_id: 34f4dcc3-a5f0-48dd-8c62-b467929d2ec6
                     app_name: bvusykbkgg
                     stream_name: newlibe
                     stream_type: event
-                    ended_at: '2023-01-08 06:19:55'
-                    started_at: '2023-01-08 06:19:55'
+                    ended_at: "2023-01-08 06:19:55"
+                    started_at: "2023-01-08 06:19:55"
                     status: To be started
-                    ingestion_url: 'rtmp://lms-public-ingest.swiftfederation.com/bvusykbkgg'
+                    ingestion_url: "rtmp://lms-public-ingest.swiftfederation.com/bvusykbkgg"
                     ingestion_key: newlibe?token=1673245196-93b5cc37379f4795c001aae01e17e52b/
                     ingestion_protocol: rtmp
-                    direct_play_url: 'https://comming-soon.gotipath.com'
+                    direct_play_url: "https://comming-soon.gotipath.com"
                     outputs:
                       - playlist:
                           - preset: 240p
-                            uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-240p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-240p.m3u8"
                           - preset: 360p
-                            uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-360p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-360p.m3u8"
                           - preset: 480p
-                            uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-480p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-480p.m3u8"
                           - preset: 720p
-                            uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-720p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-720p.m3u8"
                           - preset: 1080p
-                            uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-1080p.m3u8'
+                            uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-1080p.m3u8"
                         protocol: hls
-                        manifest: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-manifest.m3u8'
+                        manifest: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-manifest.m3u8"
                 success: true
       operationId: get-libraries-id-livestreams
       description: Get All Live Streams List
@@ -1820,7 +1820,7 @@ paths:
         - Live Streams
       operationId: post-libraries-id-livestreams
       responses:
-        '201':
+        "201":
           description: Created
           schema:
             type: object
@@ -1872,23 +1872,23 @@ paths:
                   app_name: bvusykbkgg
                   stream_name: newlibe
                   stream_type: event
-                  ingestion_url: 'rtmp://lms-public-ingest.swiftfederation.com/bvusykbkgg'
+                  ingestion_url: "rtmp://lms-public-ingest.swiftfederation.com/bvusykbkgg"
                   ingestion_key: newlibe?token=1673245196-93b5cc37379f4795c001aae01e17e52b
                   ingestion_protocol: rtmp
                   outputs:
                     - playlist:
                         - preset: 240p
-                          uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-240p.m3u8'
+                          uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-240p.m3u8"
                         - preset: 360p
-                          uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-360p.m3u8'
+                          uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-360p.m3u8"
                         - preset: 480p
-                          uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-480p.m3u8'
+                          uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-480p.m3u8"
                         - preset: 720p
-                          uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-720p.m3u8'
+                          uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-720p.m3u8"
                         - preset: 1080p
-                          uri: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-1080p.m3u8'
+                          uri: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-1080p.m3u8"
                       protocol: hls
-                      manifest: 'https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-manifest.m3u8'
+                      manifest: "https://kkcfcbdc.gpcdn.net/bvusykbkgg/newlibe-manifest.m3u8"
                 success: true
       description: Create New Live stream
       parameters:
@@ -1924,20 +1924,20 @@ paths:
       tags:
         - Videos
       operationId: get-tusdupload
-      description: 'Initiates a video upload using the TUS protocol. On success, the server responds with a status code 201 (created) and includes a location header to indicate where the content should be uploaded. Refer to https://tus.io for protocol details.'
+      description: "Initiates a video upload using the TUS protocol. On success, the server responds with a status code 201 (created) and includes a location header to indicate where the content should be uploaded. Refer to https://tus.io for protocol details."
       responses:
-        '200':
+        "200":
           description: Initiate video uploads using TUS response
           schema:
             type: object
             properties: {}
-        '400':
+        "400":
           description: Bad Request
           schema:
             type: object
             properties: {}
     parameters: []
-  '/libraries/{libraryId}/videos/{videoId}':
+  "/libraries/{libraryId}/videos/{videoId}":
     parameters:
       - type: string
         name: libraryId
@@ -1953,7 +1953,7 @@ paths:
         - Videos
       operationId: delete-libraries-libraryId-videos-videoId
       responses:
-        '200':
+        "200":
           description: OK
       description: Delete Video
     get:
@@ -1962,7 +1962,7 @@ paths:
         - Videos
       operationId: get-libraries-libraryId-videos-videoId
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -1972,40 +1972,40 @@ paths:
                 result:
                   id: 50cbe55a-61dd-4a00-bf65-3b0a227e22dc
                   library_id: 00d21629-0f9b-4989-83f6-eed66d49c6b1
-                  collection_id: ''
+                  collection_id: ""
                   name: sifat new 2video
                   views: 0
                   length: 597
-                  formatted_duration: '09:57'
+                  formatted_duration: "09:57"
                   status: playable
                   upload_type: portal
                   framerate: 0
                   width: 0
                   height: 0
-                  thumbnail_url: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/thumbnail.jpg'
+                  thumbnail_url: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/thumbnail.jpg"
                   thumbnail_count: 5
-                  preview_animation_thumbnail_url: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/preview.webp'
+                  preview_animation_thumbnail_url: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/preview.webp"
                   captions: []
                   chapters: []
                   moments: []
-                  uploaded_at: '2023-03-14T04:21:21Z'
-                  created_at: '2023-03-14T04:21:21Z'
-                  updated_at: '2023-03-14T04:29:09Z'
-                  direct_play_url: 'https://player.gotipath.com/stream/00d21629-0f9b-4989-83f6-eed66d49c6b1/default/50cbe55a-61dd-4a00-bf65-3b0a227e22dc'
-                  manifest_url: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/playlist.m3u8'
+                  uploaded_at: "2023-03-14T04:21:21Z"
+                  created_at: "2023-03-14T04:21:21Z"
+                  updated_at: "2023-03-14T04:29:09Z"
+                  direct_play_url: "https://player.gotipath.com/stream/00d21629-0f9b-4989-83f6-eed66d49c6b1/default/50cbe55a-61dd-4a00-bf65-3b0a227e22dc"
+                  manifest_url: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/playlist.m3u8"
                   transcoding_progress: 100
                   raw_size: 158008374
                   size: 524 MB
                   outputs:
                     - playlist:
                         - preset: 240p
-                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_240p.mp4'
+                          uri: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_240p.mp4"
                         - preset: 360p
-                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_360p.mp4'
+                          uri: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_360p.mp4"
                         - preset: 480p
-                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_480p.mp4'
+                          uri: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_480p.mp4"
                         - preset: 720p
-                          uri: 'https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_720p.mp4'
+                          uri: "https://fdjjhzpkjf.gpcdn.net/28fde638-b969-4dcf-a53a-7cb3de97629e/play_720p.mp4"
                       protocol: mp4
                 success: true
             properties:
@@ -2095,7 +2095,7 @@ paths:
               success:
                 type: boolean
       description: Get Video Details.
-  '/libraries/{libraryId}/livestreams/{livestreamId}':
+  "/libraries/{libraryId}/livestreams/{livestreamId}":
     parameters:
       - type: string
         name: libraryId
@@ -2111,7 +2111,7 @@ paths:
       summary: Delete Livestream
       operationId: delete-libraries-libraryId-livestreams-livestreamId
       responses:
-        '200':
+        "200":
           description: OK
       description: Delete livesteam
     get:
@@ -2120,7 +2120,7 @@ paths:
       summary: Livestream details
       operationId: get-libraries-libraryId-livestreams-livestreamId
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -2172,35 +2172,35 @@ paths:
                   app_name: roblzxxmrm
                   stream_name: linearwithrecord2
                   stream_type: linear
-                  ingestion_url: 'rtmp://live-push.gotipath.com/roblzxxmrm'
+                  ingestion_url: "rtmp://live-push.gotipath.com/roblzxxmrm"
                   ingestion_key: linearwithrecord2?token=1676273419-7bcd679059e0d522617dc689e0742fd0
-                  ingestion_protocol: ''
+                  ingestion_protocol: ""
                   outputs:
                     - playlist:
                         - preset: 240p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-240p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-240p.m3u8"
                         - preset: 360p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-360p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-360p.m3u8"
                         - preset: 480p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-480p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-480p.m3u8"
                         - preset: 720p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-720p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-720p.m3u8"
                         - preset: 1080p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-1080p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-1080p.m3u8"
                         - preset: 1440p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-1440p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-1440p.m3u8"
                         - preset: 2160p
-                          uri: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-2160p.m3u8'
+                          uri: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-2160p.m3u8"
                       protocol: hls
-                      manifest: 'https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-manifest.m3u8'
+                      manifest: "https://jmqk9zxdft.gpcdn.net/roblzxxmrm/linearwithrecord2-manifest.m3u8"
                 success: true
-        '404':
+        "404":
           description: Not Found
           schema:
             type: object
             properties: {}
       description: Livestream details
-  '/libraries/{libraryId}/livestreams/{livestreamId}/ban':
+  "/libraries/{libraryId}/livestreams/{livestreamId}/ban":
     parameters:
       - type: string
         name: libraryId
@@ -2216,10 +2216,10 @@ paths:
       summary: Livestream Ban
       operationId: patch-libraries-libraryId-livestreams-livestreamId-ban
       responses:
-        '200':
+        "200":
           description: OK
       description: Livestream ban
-  '/libraries/{libraryId}/livestreams/{livestreamId}/unban':
+  "/libraries/{libraryId}/livestreams/{livestreamId}/unban":
     parameters:
       - type: string
         name: libraryId
@@ -2235,10 +2235,10 @@ paths:
       summary: Livestream Unban
       operationId: hpatch-libraries-libraryId-livestreams-livestreamId-ban
       responses:
-        '200':
+        "200":
           description: OK
       description: Livestream unban
-  '/libraries/{libraryId}/players':
+  "/libraries/{libraryId}/players":
     parameters:
       - type: string
         name: libraryId
@@ -2249,7 +2249,7 @@ paths:
       tags:
         - Players
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -2319,7 +2319,7 @@ paths:
                         progress_slider:
                           type: boolean
                         watchtime_heatmap:
-                          type: 'null'
+                          type: "null"
                         double_tap_forward_rewind:
                           type: boolean
                         airplay_button:
@@ -2349,17 +2349,17 @@ paths:
                     customer_id: 92f9d000-5051-4339-9b3a-91f1c2a4c076
                     library_id: c7bee059-e642-48af-bdb3-766d16dae08e
                     name: Player 1
-                    primary_color: '#1D4ED8'
+                    primary_color: "#1D4ED8"
                     custom_html:
-                      head: ''
-                      footer: ''
+                      head: ""
+                      footer: ""
                     language: en
-                    font_family: ''
+                    font_family: ""
                     font_size: 16
                     caption:
                       font_size: 20
-                      font_color: '#FFFFFF'
-                      background_color: '#000000'
+                      font_color: "#FFFFFF"
+                      background_color: "#000000"
                     controls:
                       big_play_button: true
                       play_pause_button: true
@@ -2384,16 +2384,16 @@ paths:
                     is_default: false
                 success: true
       operationId: get-libraries-libraryId-players
-      description: 'Retrieve a list of all the player themes you created, as well as details about each one.'
+      description: "Retrieve a list of all the player themes you created, as well as details about each one."
     post:
       summary: Create a player
       tags:
         - Players
       operationId: post-libraries-libraryId-players
       responses:
-        '200':
+        "200":
           description: OK
-      description: 'Create a player for your video, and customise it.'
+      description: "Create a player for your video, and customise it."
       parameters:
         - in: body
           name: body
@@ -2404,17 +2404,17 @@ paths:
                 id: null
                 library_id: c7bee059-e642-48af-bdb3-766d16dae08e
                 name: test
-                primary_color: '#1D4ED8'
+                primary_color: "#1D4ED8"
                 custom_html:
-                  head: ''
-                  footer: ''
+                  head: ""
+                  footer: ""
                 language: en
-                font_family: ''
+                font_family: ""
                 font_size: 16
                 caption:
                   font_size: 20
-                  font_color: '#563939'
-                  background_color: '#000000'
+                  font_color: "#563939"
+                  background_color: "#000000"
                 controls:
                   big_play_button: true
                   play_pause_button: true
@@ -2506,7 +2506,7 @@ paths:
                     type: boolean
                   loop:
                     type: boolean
-  '/libraries/{libraryId}/players/{playerId}':
+  "/libraries/{libraryId}/players/{playerId}":
     parameters:
       - type: string
         name: libraryId
@@ -2521,7 +2521,7 @@ paths:
       tags:
         - Players
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -2533,7 +2533,7 @@ paths:
         - Players
       operationId: delete-libraries-libraryId-players-playerId
       responses:
-        '200':
+        "200":
           description: OK
     put:
       tags:
@@ -2541,7 +2541,7 @@ paths:
       summary: Update a player
       operationId: put-libraries-libraryId-players-playerId
       responses:
-        '200':
+        "200":
           description: OK
       parameters:
         - in: body
@@ -2549,7 +2549,7 @@ paths:
           schema:
             type: object
             properties: {}
-  '/libraries/{libraryId}/players/{playerId}/mark-as-default':
+  "/libraries/{libraryId}/players/{playerId}/mark-as-default":
     parameters:
       - type: string
         name: libraryId
@@ -2565,9 +2565,9 @@ paths:
         - Players
       operationId: post-libraries-libraryId-players-playerId-mark-as-default
       responses:
-        '200':
+        "200":
           description: OK
-  '/libraries/{libraryId}/watermarks':
+  "/libraries/{libraryId}/watermarks":
     parameters:
       - type: string
         name: libraryId
@@ -2579,7 +2579,7 @@ paths:
         - Watermark
       operationId: delete-libraries-libraryId-watermarks
       responses:
-        '200':
+        "200":
           description: OK
     post:
       summary: Upload &  Update a watermark
@@ -2587,9 +2587,9 @@ paths:
         - Watermark
       operationId: post-libraries-libraryId-watermarks
       responses:
-        '200':
+        "200":
           description: OK
-  '/libraries/{libraryId}/advertisements':
+  "/libraries/{libraryId}/advertisements":
     parameters:
       - type: string
         name: libraryId
@@ -2600,7 +2600,7 @@ paths:
       tags:
         - Advertisements
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -2612,9 +2612,9 @@ paths:
         - Advertisements
       operationId: post-libraries-libraryId-advertisements
       responses:
-        '200':
+        "200":
           description: OK
-  '/libraries/{libraryId}/advertisements/{advertisementId}':
+  "/libraries/{libraryId}/advertisements/{advertisementId}":
     parameters:
       - type: string
         name: libraryId
@@ -2629,7 +2629,7 @@ paths:
       tags:
         - Advertisements
       responses:
-        '200':
+        "200":
           description: OK
           schema:
             type: object
@@ -2641,7 +2641,7 @@ paths:
       tags:
         - Advertisements
       responses:
-        '200':
+        "200":
           description: OK
     delete:
       summary: Delete a advertisement
@@ -2649,9 +2649,9 @@ paths:
         - Advertisements
       operationId: delete-libraries-libraryId-advertisements-advertisementId
       responses:
-        '200':
+        "200":
           description: OK
-  '/libraries/{libraryId}/access-controls':
+  "/libraries/{libraryId}/access-controls":
     parameters:
       - type: string
         name: libraryId
@@ -2663,7 +2663,7 @@ paths:
         - Access controls
       operationId: put-libraries-libraryId-access-controls
       responses:
-        '200':
+        "200":
           description: OK
     get:
       summary: Retrieve Access controls
@@ -2671,9 +2671,9 @@ paths:
         - Access controls
       operationId: get-libraries-libraryId-access-controls
       responses:
-        '200':
+        "200":
           description: OK
-  '/libraries/{libraryId}/videos/pull':
+  "/libraries/{libraryId}/videos/pull":
     parameters:
       - type: string
         name: libraryId
@@ -2685,7 +2685,7 @@ paths:
         - Videos
       operationId: post-libraries-libraryId-videos-pull
       responses:
-        '201':
+        "201":
           description: Created
           schema:
             type: object
@@ -2734,15 +2734,15 @@ paths:
                   thumbnail_count:
                     type: integer
                   thumbnail_paths:
-                    type: 'null'
+                    type: "null"
                   captions:
-                    type: 'null'
+                    type: "null"
                   chapters:
-                    type: 'null'
+                    type: "null"
                   meta_data:
-                    type: 'null'
+                    type: "null"
                   moments:
-                    type: 'null'
+                    type: "null"
                   uploaded_at:
                     type: string
                   created_at:
@@ -2756,7 +2756,7 @@ paths:
                   advertisement_id:
                     type: string
                   tags:
-                    type: 'null'
+                    type: "null"
               success:
                 type: boolean
             x-examples:
@@ -2764,38 +2764,38 @@ paths:
                 message: Video pull request Accepted
                 result:
                   id: 57da476e-c3b8-4d72-9d67-d59c6b4f91d5
-                  customer_id: ''
+                  customer_id: ""
                   library_id: c15f1765-f67d-42d9-82fc-484678c03c3d
-                  collection_id: ''
+                  collection_id: ""
                   name: gotipath new video
-                  raw_path: ''
+                  raw_path: ""
                   raw_size: 22560883
                   transcoding_size: 0
                   size: 0
-                  vast_url: ''
-                  raw_file_name: ''
+                  vast_url: ""
+                  raw_file_name: ""
                   views: 0
                   length: 0
                   status: pulling
                   framerate: 0
                   width: 0
                   height: 0
-                  thumbnail_path: ''
+                  thumbnail_path: ""
                   thumbnail_count: 0
                   thumbnail_paths: null
                   captions: null
                   chapters: null
                   meta_data: null
                   moments: null
-                  uploaded_at: '2023-03-14T00:17:34.397739+06:00'
-                  created_at: '2023-03-14T00:17:34.402+06:00'
-                  updated_at: '2023-03-14T00:17:34.402+06:00'
+                  uploaded_at: "2023-03-14T00:17:34.397739+06:00"
+                  created_at: "2023-03-14T00:17:34.402+06:00"
+                  updated_at: "2023-03-14T00:17:34.402+06:00"
                   transcoding_progress: 0
                   total_watch_time: 0
-                  advertisement_id: ''
+                  advertisement_id: ""
                   tags: null
                 success: true
-        '400':
+        "400":
           description: Bad Request
           schema:
             type: object
@@ -2803,7 +2803,7 @@ paths:
               message:
                 type: string
               errors:
-                type: 'null'
+                type: "null"
               success:
                 type: boolean
             x-examples:
@@ -2819,7 +2819,7 @@ paths:
             x-examples:
               Example 1:
                 name: gotipath new video
-                url: 'https://storage.googleapis.com/muxdemofiles/mux-video-intro.mp4'
+                url: "https://storage.googleapis.com/muxdemofiles/mux-video-intro.mp4"
                 request_headers:
                   Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l
                 custom_id_1: 7xfhsfsfsldalsdald
@@ -2838,8 +2838,8 @@ paths:
             required:
               - name
               - url
-          description: ''
-      description: 'Pull Video '
+          description: ""
+      description: "Pull Video "
 definitions: {}
 securityDefinitions:
   X-Auth-ClientId:
